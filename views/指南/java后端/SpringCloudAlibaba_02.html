@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>SpringCloudAlibaba_02 | blog</title>
+    <meta name="description" content="blog">
+    <meta name="generator" content="VuePress 1.3.1">
+    <link rel="icon" href="/favicon.ico">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.29b4407c.css" as="style"><link rel="preload" href="/assets/js/app.20e080e3.js" as="script"><link rel="preload" href="/assets/js/3.69b4042a.js" as="script"><link rel="preload" href="/assets/js/1.c4c6ad86.js" as="script"><link rel="preload" href="/assets/js/28.04fb7d74.js" as="script"><link rel="prefetch" href="/assets/js/10.fbf5bf0b.js"><link rel="prefetch" href="/assets/js/11.89c72eac.js"><link rel="prefetch" href="/assets/js/12.8f3fc90e.js"><link rel="prefetch" href="/assets/js/13.606381d5.js"><link rel="prefetch" href="/assets/js/14.7a61181a.js"><link rel="prefetch" href="/assets/js/15.2595a1ba.js"><link rel="prefetch" href="/assets/js/16.3a0abb52.js"><link rel="prefetch" href="/assets/js/17.6a344db1.js"><link rel="prefetch" href="/assets/js/18.4bf78878.js"><link rel="prefetch" href="/assets/js/19.8f00e0c6.js"><link rel="prefetch" href="/assets/js/20.260311cc.js"><link rel="prefetch" href="/assets/js/21.8578208c.js"><link rel="prefetch" href="/assets/js/22.20e75bd8.js"><link rel="prefetch" href="/assets/js/23.363521a2.js"><link rel="prefetch" href="/assets/js/24.15a014dc.js"><link rel="prefetch" href="/assets/js/25.f74701fe.js"><link rel="prefetch" href="/assets/js/26.9805c56f.js"><link rel="prefetch" href="/assets/js/27.c059cd71.js"><link rel="prefetch" href="/assets/js/29.b1ef7687.js"><link rel="prefetch" href="/assets/js/30.5fb4a460.js"><link rel="prefetch" href="/assets/js/31.860de359.js"><link rel="prefetch" href="/assets/js/32.d40511a0.js"><link rel="prefetch" href="/assets/js/33.abe76948.js"><link rel="prefetch" href="/assets/js/34.c95627c4.js"><link rel="prefetch" href="/assets/js/35.884b7ac2.js"><link rel="prefetch" href="/assets/js/36.ce4ffc06.js"><link rel="prefetch" href="/assets/js/37.ed7666d7.js"><link rel="prefetch" href="/assets/js/38.6efa9d7f.js"><link rel="prefetch" href="/assets/js/39.ff98a367.js"><link rel="prefetch" href="/assets/js/4.295bb786.js"><link rel="prefetch" href="/assets/js/40.040344ed.js"><link rel="prefetch" href="/assets/js/41.79742567.js"><link rel="prefetch" href="/assets/js/42.bea47c85.js"><link rel="prefetch" href="/assets/js/43.14107803.js"><link rel="prefetch" href="/assets/js/44.f793a44c.js"><link rel="prefetch" href="/assets/js/45.293deda9.js"><link rel="prefetch" href="/assets/js/46.025ac826.js"><link rel="prefetch" href="/assets/js/47.9857334e.js"><link rel="prefetch" href="/assets/js/48.4d7aeb19.js"><link rel="prefetch" href="/assets/js/5.6ab23509.js"><link rel="prefetch" href="/assets/js/6.a01c80cf.js"><link rel="prefetch" href="/assets/js/7.6ced6a0e.js"><link rel="prefetch" href="/assets/js/8.3a631268.js"><link rel="prefetch" href="/assets/js/9.09f4064e.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.29b4407c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div><div class="theme-container" data-v-4698c43e><div data-v-4698c43e><div id="loader-wrapper" class="loading-wrapper" data-v-4b73742e data-v-4698c43e data-v-4698c43e><div class="loader-main" data-v-4b73742e><div data-v-4b73742e></div><div data-v-4b73742e></div><div data-v-4b73742e></div><div data-v-4b73742e></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-6cbeab0a data-v-4698c43e data-v-4698c43e><h3 class="title" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a>blog</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><input type="password" value="" data-v-6cbeab0a> <span data-v-6cbeab0a>Konck! Knock!</span> <button data-v-6cbeab0a>OK</button></label> <div class="footer" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><span data-v-6cbeab0a><i class="iconfont reco-theme" data-v-6cbeab0a></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-6cbeab0a>vuePress-theme-reco</a></span> <span data-v-6cbeab0a><i class="iconfont reco-copyright" data-v-6cbeab0a></i> <a data-v-6cbeab0a><span data-v-6cbeab0a>blog</span>
+            
+          <span data-v-6cbeab0a>2019 - </span>
+          2020
+        </a></span></div></div> <div class="hide" data-v-4698c43e><header class="navbar" data-v-4698c43e><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="blog" class="logo"> <span class="site-name">blog</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      Category
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/Linux/" class="nav-link"><i class="iconfont undefined"></i>
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/categories/java/" class="nav-link"><i class="iconfont undefined"></i>
+  java
+</a></li><li class="dropdown-item"><!----> <a href="/categories/java 后端/" class="nav-link"><i class="iconfont undefined"></i>
+  java 后端
+</a></li><li class="dropdown-item"><!----> <a href="/categories/typora/" class="nav-link"><i class="iconfont undefined"></i>
+  typora
+</a></li><li class="dropdown-item"><!----> <a href="/categories/vue/" class="nav-link"><i class="iconfont undefined"></i>
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/categories/java 基础/" class="nav-link"><i class="iconfont undefined"></i>
+  java 基础
+</a></li><li class="dropdown-item"><!----> <a href="/categories/编程方法/" class="nav-link"><i class="iconfont undefined"></i>
+  编程方法
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Mysql/" class="nav-link"><i class="iconfont undefined"></i>
+  Mysql
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-npm"></i>
+      在线工具
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://smallpdf.com/cn/pdf-to-word" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  PDF 转换器
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://www.bejson.com/jsoneditoronline" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  JSON 编辑器
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://tableconvert.com/?output=text" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  MD 表格生成器
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="http://cron.qqe2.com/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  CRON 表达式
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="http://tool.oschina.net/codeformat/html" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  代码格式化
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://zh.numberempire.com/latexequationeditor.php" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  公式编辑器
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://cli.im/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  二维码生成器
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="http://tool.chinaz.com/tools/native_ascii.aspx" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  在线编码转换
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="http://www.toyaml.com" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  YAML &lt;-&gt; Properties
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://jsfiddle.net/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  在线 Web 练习
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://www.github.com/rxt520" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="/views/%E6%8C%87%E5%8D%97/java%E5%90%8E%E7%AB%AF/.html" class="nav-link"><i class="iconfont reco-jianshu"></i>
+  简书
+</a></li><li class="dropdown-item"><!----> <a href="/views/%E6%8C%87%E5%8D%97/java%E5%90%8E%E7%AB%AF/.html" class="nav-link"><i class="iconfont reco-csdn"></i>
+  CSDN
+</a></li><li class="dropdown-item"><!----> <a href="/views/%E6%8C%87%E5%8D%97/java%E5%90%8E%E7%AB%AF/.html" class="nav-link"><i class="iconfont reco-bokeyuan"></i>
+  博客圆
+</a></li><li class="dropdown-item"><!----> <a href="/views/%E6%8C%87%E5%8D%97/java%E5%90%8E%E7%AB%AF/.html" class="nav-link"><i class="iconfont reco-wechat"></i>
+  WeChat
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-4698c43e></div> <aside class="sidebar" data-v-4698c43e><div class="personal-info-wrapper" data-v-6c8ffc9c><img src="/avatar.png" alt="author-avatar" class="personal-img" data-v-6c8ffc9c> <h3 class="name" data-v-6c8ffc9c>
+    blog
+  </h3> <div class="num" data-v-6c8ffc9c><div data-v-6c8ffc9c><h3 data-v-6c8ffc9c>23</h3> <h6 data-v-6c8ffc9c>文章</h6></div> <div data-v-6c8ffc9c><h3 data-v-6c8ffc9c>16</h3> <h6 data-v-6c8ffc9c>标签</h6></div></div> <hr data-v-6c8ffc9c></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      Category
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/Linux/" class="nav-link"><i class="iconfont undefined"></i>
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/categories/java/" class="nav-link"><i class="iconfont undefined"></i>
+  java
+</a></li><li class="dropdown-item"><!----> <a href="/categories/java 后端/" class="nav-link"><i class="iconfont undefined"></i>
+  java 后端
+</a></li><li class="dropdown-item"><!----> <a href="/categories/typora/" class="nav-link"><i class="iconfont undefined"></i>
+  typora
+</a></li><li class="dropdown-item"><!----> <a href="/categories/vue/" class="nav-link"><i class="iconfont undefined"></i>
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/categories/java 基础/" class="nav-link"><i class="iconfont undefined"></i>
+  java 基础
+</a></li><li class="dropdown-item"><!----> <a href="/categories/编程方法/" class="nav-link"><i class="iconfont undefined"></i>
+  编程方法
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Mysql/" class="nav-link"><i class="iconfont undefined"></i>
+  Mysql
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-npm"></i>
+      在线工具
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://smallpdf.com/cn/pdf-to-word" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  PDF 转换器
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://www.bejson.com/jsoneditoronline" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  JSON 编辑器
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://tableconvert.com/?output=text" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  MD 表格生成器
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="http://cron.qqe2.com/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  CRON 表达式
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="http://tool.oschina.net/codeformat/html" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  代码格式化
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://zh.numberempire.com/latexequationeditor.php" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  公式编辑器
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://cli.im/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  二维码生成器
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="http://tool.chinaz.com/tools/native_ascii.aspx" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  在线编码转换
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="http://www.toyaml.com" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  YAML &lt;-&gt; Properties
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://jsfiddle.net/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  在线 Web 练习
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://www.github.com/rxt520" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="/views/%E6%8C%87%E5%8D%97/java%E5%90%8E%E7%AB%AF/.html" class="nav-link"><i class="iconfont reco-jianshu"></i>
+  简书
+</a></li><li class="dropdown-item"><!----> <a href="/views/%E6%8C%87%E5%8D%97/java%E5%90%8E%E7%AB%AF/.html" class="nav-link"><i class="iconfont reco-csdn"></i>
+  CSDN
+</a></li><li class="dropdown-item"><!----> <a href="/views/%E6%8C%87%E5%8D%97/java%E5%90%8E%E7%AB%AF/.html" class="nav-link"><i class="iconfont reco-bokeyuan"></i>
+  博客圆
+</a></li><li class="dropdown-item"><!----> <a href="/views/%E6%8C%87%E5%8D%97/java%E5%90%8E%E7%AB%AF/.html" class="nav-link"><i class="iconfont reco-wechat"></i>
+  WeChat
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>SpringCloudAlibaba_02</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/views/%E6%8C%87%E5%8D%97/java%E5%90%8E%E7%AB%AF/SpringCloudAlibaba_02.html#什么是-dubbo" class="sidebar-link">什么是 Dubbo</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/%E6%8C%87%E5%8D%97/java%E5%90%8E%E7%AB%AF/SpringCloudAlibaba_02.html#dubbo-架构" class="sidebar-link">Dubbo 架构</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/views/%E6%8C%87%E5%8D%97/java%E5%90%8E%E7%AB%AF/SpringCloudAlibaba_02.html#节点角色说明" class="sidebar-link">节点角色说明</a></li><li class="sidebar-sub-header"><a href="/views/%E6%8C%87%E5%8D%97/java%E5%90%8E%E7%AB%AF/SpringCloudAlibaba_02.html#调用关系说明" class="sidebar-link">调用关系说明</a></li></ul></li><li><a href="/views/%E6%8C%87%E5%8D%97/java%E5%90%8E%E7%AB%AF/SpringCloudAlibaba_02.html#dubbo-功能特点" class="sidebar-link">Dubbo 功能特点</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/%E6%8C%87%E5%8D%97/java%E5%90%8E%E7%AB%AF/SpringCloudAlibaba_02.html#附：扩展阅读" class="sidebar-link">附：扩展阅读</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/views/%E6%8C%87%E5%8D%97/java%E5%90%8E%E7%AB%AF/SpringCloudAlibaba_02.html#什么是-rpc" class="sidebar-link">什么是 RPC</a></li><li class="sidebar-sub-header"><a href="/views/%E6%8C%87%E5%8D%97/java%E5%90%8E%E7%AB%AF/SpringCloudAlibaba_02.html#如何实现一个-rpc" class="sidebar-link">如何实现一个 RPC</a></li><li class="sidebar-sub-header"><a href="/views/%E6%8C%87%E5%8D%97/java%E5%90%8E%E7%AB%AF/SpringCloudAlibaba_02.html#rpc-vs-restful" class="sidebar-link">RPC vs Restful</a></li><li class="sidebar-sub-header"><a href="/views/%E6%8C%87%E5%8D%97/java%E5%90%8E%E7%AB%AF/SpringCloudAlibaba_02.html#阿里为何放弃-zookeeper" class="sidebar-link">阿里为何放弃 Zookeeper</a></li></ul></li><li><a href="/views/%E6%8C%87%E5%8D%97/java%E5%90%8E%E7%AB%AF/SpringCloudAlibaba_02.html#创建项目工程" class="sidebar-link">创建项目工程</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/views/%E6%8C%87%E5%8D%97/java%E5%90%8E%E7%AB%AF/SpringCloudAlibaba_02.html#pom" class="sidebar-link">POM</a></li></ul></li><li><a href="/views/%E6%8C%87%E5%8D%97/java%E5%90%8E%E7%AB%AF/SpringCloudAlibaba_02.html#创建统一的依赖管理" class="sidebar-link">创建统一的依赖管理</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/views/%E6%8C%87%E5%8D%97/java%E5%90%8E%E7%AB%AF/SpringCloudAlibaba_02.html#pom-2" class="sidebar-link">POM</a></li></ul></li><li><a href="/views/%E6%8C%87%E5%8D%97/java%E5%90%8E%E7%AB%AF/SpringCloudAlibaba_02.html#服务注册与发现" class="sidebar-link">服务注册与发现</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/views/%E6%8C%87%E5%8D%97/java%E5%90%8E%E7%AB%AF/SpringCloudAlibaba_02.html#概述" class="sidebar-link">概述</a></li><li class="sidebar-sub-header"><a href="/views/%E6%8C%87%E5%8D%97/java%E5%90%8E%E7%AB%AF/SpringCloudAlibaba_02.html#创建服务提供者" class="sidebar-link">创建服务提供者</a></li><li class="sidebar-sub-header"><a href="/views/%E6%8C%87%E5%8D%97/java%E5%90%8E%E7%AB%AF/SpringCloudAlibaba_02.html#创建服务消费者" class="sidebar-link">创建服务消费者</a></li></ul></li><li><a href="/views/%E6%8C%87%E5%8D%97/java%E5%90%8E%E7%AB%AF/SpringCloudAlibaba_02.html#dubbo-中的序列化" class="sidebar-link">Dubbo 中的序列化</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/views/%E6%8C%87%E5%8D%97/java%E5%90%8E%E7%AB%AF/SpringCloudAlibaba_02.html#启用-kryo" class="sidebar-link">启用 Kryo</a></li><li class="sidebar-sub-header"><a href="/views/%E6%8C%87%E5%8D%97/java%E5%90%8E%E7%AB%AF/SpringCloudAlibaba_02.html#附：扩展阅读-2" class="sidebar-link">附：扩展阅读</a></li></ul></li><li><a href="/views/%E6%8C%87%E5%8D%97/java%E5%90%8E%E7%AB%AF/SpringCloudAlibaba_02.html#dubbo-负载均衡" class="sidebar-link">Dubbo 负载均衡</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/%E6%8C%87%E5%8D%97/java%E5%90%8E%E7%AB%AF/SpringCloudAlibaba_02.html#概述-2" class="sidebar-link">概述</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/%E6%8C%87%E5%8D%97/java%E5%90%8E%E7%AB%AF/SpringCloudAlibaba_02.html#负载均衡策略" class="sidebar-link">负载均衡策略</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/views/%E6%8C%87%E5%8D%97/java%E5%90%8E%E7%AB%AF/SpringCloudAlibaba_02.html#随机" class="sidebar-link">随机</a></li><li class="sidebar-sub-header"><a href="/views/%E6%8C%87%E5%8D%97/java%E5%90%8E%E7%AB%AF/SpringCloudAlibaba_02.html#轮循" class="sidebar-link">轮循</a></li><li class="sidebar-sub-header"><a href="/views/%E6%8C%87%E5%8D%97/java%E5%90%8E%E7%AB%AF/SpringCloudAlibaba_02.html#最少活跃调用数" class="sidebar-link">最少活跃调用数</a></li><li class="sidebar-sub-header"><a href="/views/%E6%8C%87%E5%8D%97/java%E5%90%8E%E7%AB%AF/SpringCloudAlibaba_02.html#一致性-hash" class="sidebar-link">一致性 Hash</a></li><li class="sidebar-sub-header"><a href="/views/%E6%8C%87%E5%8D%97/java%E5%90%8E%E7%AB%AF/SpringCloudAlibaba_02.html#配置负载均衡" class="sidebar-link">配置负载均衡</a></li></ul></li><li><a href="/views/%E6%8C%87%E5%8D%97/java%E5%90%8E%E7%AB%AF/SpringCloudAlibaba_02.html#dubbo-外部化配置" class="sidebar-link">Dubbo 外部化配置</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/%E6%8C%87%E5%8D%97/java%E5%90%8E%E7%AB%AF/SpringCloudAlibaba_02.html#概述-3" class="sidebar-link">概述</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/%E6%8C%87%E5%8D%97/java%E5%90%8E%E7%AB%AF/SpringCloudAlibaba_02.html#接入配置中心" class="sidebar-link">接入配置中心</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/views/%E6%8C%87%E5%8D%97/java%E5%90%8E%E7%AB%AF/SpringCloudAlibaba_02.html#pom-8" class="sidebar-link">POM</a></li><li class="sidebar-sub-header"><a href="/views/%E6%8C%87%E5%8D%97/java%E5%90%8E%E7%AB%AF/SpringCloudAlibaba_02.html#controller-2" class="sidebar-link">Controller</a></li><li class="sidebar-sub-header"><a href="/views/%E6%8C%87%E5%8D%97/java%E5%90%8E%E7%AB%AF/SpringCloudAlibaba_02.html#使用控制台发布配置" class="sidebar-link">使用控制台发布配置</a></li><li class="sidebar-sub-header"><a href="/views/%E6%8C%87%E5%8D%97/java%E5%90%8E%E7%AB%AF/SpringCloudAlibaba_02.html#修改客户端配置" class="sidebar-link">修改客户端配置</a></li><li class="sidebar-sub-header"><a href="/views/%E6%8C%87%E5%8D%97/java%E5%90%8E%E7%AB%AF/SpringCloudAlibaba_02.html#动态刷新配置" class="sidebar-link">动态刷新配置</a></li><li class="sidebar-sub-header"><a href="/views/%E6%8C%87%E5%8D%97/java%E5%90%8E%E7%AB%AF/SpringCloudAlibaba_02.html#验证是否成功-3" class="sidebar-link">验证是否成功</a></li></ul></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-6cbeab0a data-v-4698c43e><h3 class="title" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a>SpringCloudAlibaba_02</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><input type="password" value="" data-v-6cbeab0a> <span data-v-6cbeab0a>Konck! Knock!</span> <button data-v-6cbeab0a>OK</button></label> <div class="footer" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><span data-v-6cbeab0a><i class="iconfont reco-theme" data-v-6cbeab0a></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-6cbeab0a>vuePress-theme-reco</a></span> <span data-v-6cbeab0a><i class="iconfont reco-copyright" data-v-6cbeab0a></i> <a data-v-6cbeab0a><span data-v-6cbeab0a>blog</span>
+            
+          <span data-v-6cbeab0a>2019 - </span>
+          2020
+        </a></span></div></div> <div data-v-4698c43e><main class="page"><!----> <div class="page-title" style="display:none;"><h1>SpringCloudAlibaba_02</h1> <hr> <div data-v-484a899e><i class="iconfont reco-account" data-v-484a899e><span data-v-484a899e>blog</span></i> <i class="iconfont reco-date" data-v-484a899e><span data-v-484a899e>2019-10-14</span></i> <!----> <i class="iconfont reco-tag tags" data-v-484a899e><span class="tag-item" data-v-484a899e>
+      spring Cloud
+    </span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><h1 id="springcloudalibaba-02"><a href="#springcloudalibaba-02" class="header-anchor">#</a> SpringCloudAlibaba_02</h1> <h2 id="什么是-dubbo"><a href="#什么是-dubbo" class="header-anchor">#</a> 什么是 Dubbo</h2> <p>Apache Dubbo (incubating) |ˈdʌbəʊ| 是一款高性能、轻量级的开源 Java RPC 分布式服务框架，它提供了三大核心能力：面向接口的远程方法调用，智能容错和负载均衡，以及服务自动注册和发现。她最大的特点是按照分层的方式来架构，使用这种方式可以使各个层之间解耦合（或者最大限度地松耦合）。从服务模型的角度来看，Dubbo 采用的是一种非常简单的模型，要么是提供方提供服务，要么是消费方消费服务，所以基于这一点可以抽象出服务提供方（Provider）和服务消费方（Consumer）两个角色。</p> <blockquote><p><strong>备注：</strong> 2019 年 5 月 21 日 Apache 软件基金会发表博文，宣布 Dubbo 在 2019 年 5 月 20 日 这天正式毕业，成为 Apache 的顶级项目。</p></blockquote> <ul><li><a href="http://dubbo.apache.org/zh-cn/" target="_blank" rel="noopener noreferrer">官方网站<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="https://github.com/apache/dubbo" target="_blank" rel="noopener noreferrer">官方 GitHub<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul> <h2 id="dubbo-架构"><a href="#dubbo-架构" class="header-anchor">#</a> Dubbo 架构</h2> <p><img src="http://www.qfdmy.com/wp-content/uploads/2019/08/c873bedbe1d1a2b.png" alt="img"></p> <h3 id="节点角色说明"><a href="#节点角色说明" class="header-anchor">#</a> 节点角色说明</h3> <table><thead><tr><th style="text-align:left;">节点</th> <th style="text-align:left;">角色说明</th></tr></thead> <tbody><tr><td style="text-align:left;">Provider</td> <td style="text-align:left;">暴露服务的服务提供方</td></tr> <tr><td style="text-align:left;">Consumer</td> <td style="text-align:left;">调用远程服务的服务消费方</td></tr> <tr><td style="text-align:left;">Registry</td> <td style="text-align:left;">服务注册与发现的注册中心</td></tr> <tr><td style="text-align:left;">Monitor</td> <td style="text-align:left;">统计服务的调用次数和调用时间的监控中心</td></tr> <tr><td style="text-align:left;">Container</td> <td style="text-align:left;">服务运行容器</td></tr></tbody></table> <h3 id="调用关系说明"><a href="#调用关系说明" class="header-anchor">#</a> 调用关系说明</h3> <ul><li>服务容器负责启动，加载，运行服务提供者</li> <li>服务提供者在启动时，向注册中心注册自己提供的服务</li> <li>服务消费者在启动时，向注册中心订阅自己所需的服务</li> <li>注册中心返回服务提供者地址列表给消费者，如果有变更，注册中心将基于长连接推送变更数据给消费者</li> <li>服务消费者，从提供者地址列表中，基于软负载均衡算法，选一台提供者进行调用，如果调用失败，再选另一台调用</li> <li>服务消费者和提供者，在内存中累计调用次数和调用时间，定时每分钟发送一次统计数据到监控中心</li></ul> <h2 id="dubbo-功能特点"><a href="#dubbo-功能特点" class="header-anchor">#</a> Dubbo 功能特点</h2> <ul><li><strong>面向接口代理的高性能 RPC 调用：</strong> 提供高性能的基于代理的远程调用能力，服务以接口为粒度，为开发者屏蔽远程调用底层细节</li> <li><strong>智能负载均衡：</strong> 内置多种负载均衡策略，智能感知下游节点健康状况，显著减少调用延迟，提高系统吞吐量</li> <li><strong>服务自动注册与发现：</strong> 支持多种注册中心服务，服务实例上下线实时感知</li> <li><strong>高度可扩展能力：</strong> 遵循微内核 + 插件的设计原则，所有核心能力如 Protocol、Transport、Serialization 被设计为扩展点，平等对待内置实现和第三方实现</li> <li><strong>运行期流量调度：</strong> 内置条件、脚本等路由策略，通过配置不同的路由规则，轻松实现灰度发布，同机房优先等功能</li> <li><strong>可视化的服务治理与运维：</strong> 提供丰富服务治理、运维工具：随时查询服务元数据、服务健康状态及调用统计，实时下发路由策略、调整配置参数</li></ul> <h2 id="附：扩展阅读"><a href="#附：扩展阅读" class="header-anchor">#</a> 附：扩展阅读</h2> <h3 id="什么是-rpc"><a href="#什么是-rpc" class="header-anchor">#</a> 什么是 RPC</h3> <p>分布式是促使 RPC 诞生的领域，<strong>RPC 是一种编程模型，并没有规定你具体要怎样实现</strong>，无论使用 HTTP 或是 RMI 都是可以的。</p> <p>假设你有一个计算器接口，Calculator，以及它的实现类 CalculatorImpl，那么在系统还是 <strong>单体应用</strong> 时，你要调用 Calculator 的 add 方法来执行一个加运算，直接 new 一个 CalculatorImpl，然后调用 add 方法就行了，这其实就是非常普通的 <strong>本地函数调用</strong>，因为在 <strong>同一个地址空间</strong>，或者说在同一块内存，所以通过方法栈和参数栈就可以实现。</p> <p><img src="http://www.qfdmy.com/wp-content/uploads/2019/08/b6c75b17e0815a4.png" alt="img"></p> <p>现在，基于高性能和高可靠等因素的考虑，你决定将系统改造为分布式应用，将很多可以共享的功能都单独拎出来，比如上面说到的计算器，你单独把它放到一个服务里头，让别的服务去调用它。</p> <p><img src="http://www.qfdmy.com/wp-content/uploads/2019/08/e3f7acc2bbd72f3.png" alt="img"></p> <p>这下问题来了，服务 A 里头并没有 CalculatorImpl 这个类，那它要怎样调用服务 B 的 CalculatorImpl 的 add 方法呢？</p> <p><strong>RPC 要解决的两个问题</strong></p> <ul><li>解决分布式系统中，服务之间的调用问题</li> <li>远程调用时，要能够像本地调用一样方便，让调用者感知不到远程调用的逻辑</li></ul> <h3 id="如何实现一个-rpc"><a href="#如何实现一个-rpc" class="header-anchor">#</a> 如何实现一个 RPC</h3> <p>实际情况下，<strong>RPC 很少用到 HTTP 协议来进行数据传输</strong>，毕竟我只是想传输一下数据而已，何必动用到一个文本传输的应用层协议呢，我为什么不直接使用<strong>二进制传输</strong>？比如直接用 Java 的 Socket 协议进行传输？</p> <p>不管你用何种协议进行数据传输，一个完整的 RPC 过程，都可以用下面这张图来描述</p> <p><img src="http://www.qfdmy.com/wp-content/uploads/2019/08/5a51296646d19df.png" alt="img"></p> <p>以左边的 Client 端为例，Application 就是 RPC 的调用方，Client Stub 就是我们上面说到的代理对象，也就是那个看起来像是 Calculator 的实现类，其实内部是通过 RPC 方式来进行远程调用的代理对象，至于 Client Run-time Library，则是实现远程调用的工具包，比如 JDK 的 Socket，最后通过底层网络实现实现数据的传输。</p> <p>这个过程中最重要的就是 <strong>序列化</strong> 和 <strong>反序列化</strong> 了，因为数据传输的数据包必须是二进制的，你直接丢一个 Java 对象过去，人家可不认识，你必须把 Java 对象序列化为二进制格式，传给 Server 端，Server 端接收到之后，再反序列化为 Java 对象。</p> <h3 id="rpc-vs-restful"><a href="#rpc-vs-restful" class="header-anchor">#</a> RPC vs Restful</h3> <p><strong>RPC 是面向过程</strong>，<strong>Restful 是面向资源</strong>，并且使用了 HTTP 动词。从这个维度上看，Restful 风格的 URL 在表述的精简性、可读性上都要更好。</p> <h3 id="阿里为何放弃-zookeeper"><a href="#阿里为何放弃-zookeeper" class="header-anchor">#</a> 阿里为何放弃 Zookeeper</h3> <p><strong>CAP</strong></p> <p>有个思考，从 CAP 角度考虑，服务注册中心是 CP 系统还是 AP 系统呢？</p> <ul><li>服务注册中心是为了服务间调用服务的，那么绝对不允许因为服务注册中心出现了问题而导致服务间的调用出问题</li> <li>假如有 node1，node2，node3 集群节点。保存着可用服务列表 ip1，ip2，ip3，试想如果此时不一致，比如 node1 只保存了ip1，ip2，此时服务读取 node1 的节点，那么会造成什么影响？</li></ul> <p>调用 node1 的服务，顶多就是负载均衡时不会有流量打到 ip3，然后等 node1 同步回 ip3 后，又一致了，这对服务其实没什么太大影响。所以，推测出服务注册中心应该是个 AP 系统。</p> <p><strong>Zookeeper 是个 CP 系统，强一致性</strong></p> <ul><li>场景1，当 master 挂了，此时 Zookeeper 集群需要重新选举，而此时服务需要来读取可用服务，是不可用的。影响到了服务的可用性当然你可以说服务本地有缓存可用列表。然而下面这种方式就更无法处理了。</li> <li>场景2，分区可用。试想，有 3 个机房，如果其中机房 3 和机房 1，2 网络断了，那么机房 3 的注册中心就不能注册新的机器了，这显然也不合理从健康检查角度来看</li></ul> <p><img src="http://www.qfdmy.com/wp-content/uploads/2019/08/f8c9233820b89d2.png" alt="img"></p> <p>Zookeeper 是通过 TCP 的心跳判断服务是否可用，但 TCP 的活性并不代表服务是可用的，如：连接池已满，DB 挂了等</p> <p><strong>理想的注册中心</strong></p> <ul><li>服务自动注册发现。最好有新的服务注册上去时还能推送到调用端</li> <li>能对注册上来的机器方便的进行管理，能手动删除（发送信号让服务优雅下线）、恢复机器</li> <li>服务的健康检查，能真正的检测到服务是否可用</li> <li>可以看到是否有其他调用服务正在订阅注册上来的服务</li> <li>能够带上些除了 IP 外的其它信息</li></ul> <h2 id="创建项目工程"><a href="#创建项目工程" class="header-anchor">#</a> 创建项目工程</h2> <h3 id="pom"><a href="#pom" class="header-anchor">#</a> POM</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
+    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+    &lt;parent&gt;
+        &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+        &lt;artifactId&gt;spring-boot-starter-parent&lt;/artifactId&gt;
+        &lt;version&gt;2.1.6.RELEASE&lt;/version&gt;
+        &lt;relativePath/&gt; &lt;!-- lookup parent from repository --&gt;
+    &lt;/parent&gt;
+    &lt;groupId&gt;com.smxy&lt;/groupId&gt;
+    &lt;artifactId&gt;hello-apache-dubbo&lt;/artifactId&gt;
+    &lt;version&gt;0.0.1-SNAPSHOT&lt;/version&gt;
+    &lt;packaging&gt;pom&lt;/packaging&gt;
+    &lt;url&gt;https://rxt520.github.io/Ruan.X.T.blog&lt;/url&gt;
+    &lt;modules&gt;
+        &lt;module&gt;hello-apache-dubbo-dependencies&lt;/module&gt;
+    &lt;/modules&gt;
+    &lt;properties&gt;
+        &lt;java.version&gt;1.8&lt;/java.version&gt;
+        &lt;maven.compiler.source&gt;${java.version}&lt;/maven.compiler.source&gt;
+        &lt;maven.compiler.target&gt;${java.version}&lt;/maven.compiler.target&gt;
+        &lt;project.build.sourceEncoding&gt;UTF-8&lt;/project.build.sourceEncoding&gt;
+        &lt;project.reporting.outputEncoding&gt;UTF-8&lt;/project.reporting.outputEncoding&gt;
+    &lt;/properties&gt;
+    &lt;licenses&gt;
+        &lt;license&gt;
+            &lt;name&gt;Apache 2.0&lt;/name&gt;
+            &lt;url&gt;https://www.apache.org/licenses/LICENSE-2.0.txt&lt;/url&gt;
+        &lt;/license&gt;
+    &lt;/licenses&gt;
+    &lt;developers&gt;
+        &lt;developer&gt;
+            &lt;id&gt;ruanxiongteng&lt;/id&gt;
+            &lt;name&gt;Liberty ruan&lt;/name&gt;
+            &lt;email&gt;958465427@qq.com&lt;/email&gt;
+        &lt;/developer&gt;
+    &lt;/developers&gt;
+    &lt;dependencyManagement&gt;
+        &lt;dependencies&gt;
+            &lt;dependency&gt;
+                &lt;groupId&gt;ccom.smxy/groupId&gt;
+                &lt;artifactId&gt;hello-apache-dubbo-dependencies&lt;/artifactId&gt;
+                &lt;version&gt;${project.version}&lt;/version&gt;
+                &lt;type&gt;pom&lt;/type&gt;
+                &lt;scope&gt;import&lt;/scope&gt;
+            &lt;/dependency&gt;
+        &lt;/dependencies&gt;
+    &lt;/dependencyManagement&gt;
+    &lt;profiles&gt;
+        &lt;profile&gt;
+            &lt;id&gt;default&lt;/id&gt;
+            &lt;activation&gt;
+                &lt;activeByDefault&gt;true&lt;/activeByDefault&gt;
+            &lt;/activation&gt;
+            &lt;properties&gt;
+                &lt;spring-javaformat.version&gt;0.0.12&lt;/spring-javaformat.version&gt;
+            &lt;/properties&gt;
+            &lt;build&gt;
+                &lt;plugins&gt;
+                    &lt;plugin&gt;
+                        &lt;groupId&gt;io.spring.javaformat&lt;/groupId&gt;
+                        &lt;artifactId&gt;spring-javaformat-maven-plugin&lt;/artifactId&gt;
+                        &lt;version&gt;${spring-javaformat.version}&lt;/version&gt;
+                    &lt;/plugin&gt;
+                    &lt;plugin&gt;
+                        &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                        &lt;artifactId&gt;maven-surefire-plugin&lt;/artifactId&gt;
+                        &lt;configuration&gt;
+                            &lt;includes&gt;
+                                &lt;include&gt;**/*Tests.java&lt;/include&gt;
+                            &lt;/includes&gt;
+                            &lt;excludes&gt;
+                                &lt;exclude&gt;**/Abstract*.java&lt;/exclude&gt;
+                            &lt;/excludes&gt;
+                            &lt;systemPropertyVariables&gt;
+                                &lt;java.security.egd&gt;file:/dev/./urandom&lt;/java.security.egd&gt;
+                                &lt;java.awt.headless&gt;true&lt;/java.awt.headless&gt;
+                            &lt;/systemPropertyVariables&gt;
+                        &lt;/configuration&gt;
+                    &lt;/plugin&gt;
+                    &lt;plugin&gt;
+                        &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                        &lt;artifactId&gt;maven-enforcer-plugin&lt;/artifactId&gt;
+                        &lt;executions&gt;
+                            &lt;execution&gt;
+                                &lt;id&gt;enforce-rules&lt;/id&gt;
+                                &lt;goals&gt;
+                                    &lt;goal&gt;enforce&lt;/goal&gt;
+                                &lt;/goals&gt;
+                                &lt;configuration&gt;
+                                    &lt;rules&gt;
+                                        &lt;bannedDependencies&gt;
+                                            &lt;excludes&gt;
+                                                &lt;exclude&gt;commons-logging:*:*&lt;/exclude&gt;
+                                            &lt;/excludes&gt;
+                                            &lt;searchTransitive&gt;true&lt;/searchTransitive&gt;
+                                        &lt;/bannedDependencies&gt;
+                                    &lt;/rules&gt;
+                                    &lt;fail&gt;true&lt;/fail&gt;
+                                &lt;/configuration&gt;
+                            &lt;/execution&gt;
+                        &lt;/executions&gt;
+                    &lt;/plugin&gt;
+                    &lt;plugin&gt;
+                        &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                        &lt;artifactId&gt;maven-install-plugin&lt;/artifactId&gt;
+                        &lt;configuration&gt;
+                            &lt;skip&gt;true&lt;/skip&gt;
+                        &lt;/configuration&gt;
+                    &lt;/plugin&gt;
+                    &lt;plugin&gt;
+                        &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                        &lt;artifactId&gt;maven-javadoc-plugin&lt;/artifactId&gt;
+                        &lt;configuration&gt;
+                            &lt;skip&gt;true&lt;/skip&gt;
+                        &lt;/configuration&gt;
+                        &lt;inherited&gt;true&lt;/inherited&gt;
+                    &lt;/plugin&gt;
+                &lt;/plugins&gt;
+            &lt;/build&gt;
+        &lt;/profile&gt;
+    &lt;/profiles&gt;
+    &lt;repositories&gt;
+        &lt;repository&gt;
+            &lt;id&gt;spring-milestone&lt;/id&gt;
+            &lt;name&gt;Spring Milestone&lt;/name&gt;
+            &lt;url&gt;https://repo.spring.io/milestone&lt;/url&gt;
+            &lt;snapshots&gt;
+                &lt;enabled&gt;false&lt;/enabled&gt;
+            &lt;/snapshots&gt;
+        &lt;/repository&gt;
+        &lt;repository&gt;
+            &lt;id&gt;spring-snapshot&lt;/id&gt;
+            &lt;name&gt;Spring Snapshot&lt;/name&gt;
+            &lt;url&gt;https://repo.spring.io/snapshot&lt;/url&gt;
+            &lt;snapshots&gt;
+                &lt;enabled&gt;true&lt;/enabled&gt;
+            &lt;/snapshots&gt;
+        &lt;/repository&gt;
+    &lt;/repositories&gt;
+    &lt;pluginRepositories&gt;
+        &lt;pluginRepository&gt;
+            &lt;id&gt;spring-milestone&lt;/id&gt;
+            &lt;name&gt;Spring Milestone&lt;/name&gt;
+            &lt;url&gt;https://repo.spring.io/milestone&lt;/url&gt;
+            &lt;snapshots&gt;
+                &lt;enabled&gt;false&lt;/enabled&gt;
+            &lt;/snapshots&gt;
+        &lt;/pluginRepository&gt;
+        &lt;pluginRepository&gt;
+            &lt;id&gt;spring-snapshot&lt;/id&gt;
+            &lt;name&gt;Spring Snapshot&lt;/name&gt;
+            &lt;url&gt;https://repo.spring.io/snapshot&lt;/url&gt;
+            &lt;snapshots&gt;
+                &lt;enabled&gt;true&lt;/enabled&gt;
+            &lt;/snapshots&gt;
+        &lt;/pluginRepository&gt;
+    &lt;/pluginRepositories&gt;
+&lt;/project&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br><span class="line-number">158</span><br><span class="line-number">159</span><br><span class="line-number">160</span><br></div></div><h2 id="创建统一的依赖管理"><a href="#创建统一的依赖管理" class="header-anchor">#</a> 创建统一的依赖管理</h2> <h3 id="pom-2"><a href="#pom-2" class="header-anchor">#</a> POM</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
+    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+    &lt;groupId&gt;com.smxy&lt;/groupId&gt;
+    &lt;artifactId&gt;hello-apache-dubbo-dependencies&lt;/artifactId&gt;
+    &lt;version&gt;0.0.1-SNAPSHOT&lt;/version&gt;
+    &lt;packaging&gt;pom&lt;/packaging&gt;
+    &lt;url&gt;https://rxt520.github.io/Ruan.X.T.blog&lt;/url&gt;
+    &lt;properties&gt;
+        &lt;dubbo.version&gt;2.7.2&lt;/dubbo.version&gt;
+        &lt;dubbo-actuator.version&gt;2.7.1&lt;/dubbo-actuator.version&gt;
+        &lt;spring-cloud.version&gt;Greenwich.RELEASE&lt;/spring-cloud.version&gt;
+        &lt;spring-cloud-alibaba.verion&gt;0.9.0.RELEASE&lt;/spring-cloud-alibaba.verion&gt;
+        &lt;alibaba-spring-context-support.version&gt;1.0.2&lt;/alibaba-spring-context-support.version&gt;
+    &lt;/properties&gt;
+    &lt;licenses&gt;
+        &lt;license&gt;
+            &lt;name&gt;Apache 2.0&lt;/name&gt;
+            &lt;url&gt;https://www.apache.org/licenses/LICENSE-2.0.txt&lt;/url&gt;
+        &lt;/license&gt;
+    &lt;/licenses&gt;
+    &lt;developers&gt;
+        &lt;developer&gt;
+            &lt;id&gt;ruanxiongteng&lt;/id&gt;
+            &lt;name&gt;Liberty ruan&lt;/name&gt;
+            &lt;email&gt;958465427@qq.com&lt;/email&gt;
+        &lt;/developer&gt;
+    &lt;/developers&gt;
+    &lt;dependencyManagement&gt;
+        &lt;dependencies&gt;
+            &lt;dependency&gt;
+                &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
+                &lt;artifactId&gt;spring-cloud-dependencies&lt;/artifactId&gt;
+                &lt;version&gt;${spring-cloud.version}&lt;/version&gt;
+                &lt;type&gt;pom&lt;/type&gt;
+                &lt;scope&gt;import&lt;/scope&gt;
+            &lt;/dependency&gt;
+            &lt;dependency&gt;
+                &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
+                &lt;artifactId&gt;spring-cloud-alibaba-dependencies&lt;/artifactId&gt;
+                &lt;version&gt;${spring-cloud-alibaba.verion}&lt;/version&gt;
+                &lt;type&gt;pom&lt;/type&gt;
+                &lt;scope&gt;import&lt;/scope&gt;
+            &lt;/dependency&gt;
+            &lt;dependency&gt;
+                &lt;groupId&gt;org.apache.dubbo&lt;/groupId&gt;
+                &lt;artifactId&gt;dubbo&lt;/artifactId&gt;
+                &lt;version&gt;${dubbo.version}&lt;/version&gt;
+                &lt;exclusions&gt;
+                    &lt;exclusion&gt;
+                        &lt;groupId&gt;org.springframework&lt;/groupId&gt;
+                        &lt;artifactId&gt;spring&lt;/artifactId&gt;
+                    &lt;/exclusion&gt;
+                    &lt;exclusion&gt;
+                        &lt;groupId&gt;javax.servlet&lt;/groupId&gt;
+                        &lt;artifactId&gt;servlet-api&lt;/artifactId&gt;
+                    &lt;/exclusion&gt;
+                    &lt;exclusion&gt;
+                        &lt;groupId&gt;log4j&lt;/groupId&gt;
+                        &lt;artifactId&gt;log4j&lt;/artifactId&gt;
+                    &lt;/exclusion&gt;
+                &lt;/exclusions&gt;
+            &lt;/dependency&gt;
+            &lt;dependency&gt;
+                &lt;groupId&gt;org.apache.dubbo&lt;/groupId&gt;
+                &lt;artifactId&gt;dubbo-spring-boot-actuator&lt;/artifactId&gt;
+                &lt;version&gt;${dubbo-actuator.version}&lt;/version&gt;
+            &lt;/dependency&gt;
+            &lt;dependency&gt;
+                &lt;groupId&gt;com.alibaba.spring&lt;/groupId&gt;
+                &lt;artifactId&gt;spring-context-support&lt;/artifactId&gt;
+                &lt;version&gt;${alibaba-spring-context-support.version}&lt;/version&gt;
+            &lt;/dependency&gt;
+        &lt;/dependencies&gt;
+    &lt;/dependencyManagement&gt;
+    &lt;repositories&gt;
+        &lt;repository&gt;
+            &lt;id&gt;spring-milestone&lt;/id&gt;
+            &lt;name&gt;Spring Milestone&lt;/name&gt;
+            &lt;url&gt;https://repo.spring.io/milestone&lt;/url&gt;
+            &lt;snapshots&gt;
+                &lt;enabled&gt;false&lt;/enabled&gt;
+            &lt;/snapshots&gt;
+        &lt;/repository&gt;
+        &lt;repository&gt;
+            &lt;id&gt;spring-snapshot&lt;/id&gt;
+            &lt;name&gt;Spring Snapshot&lt;/name&gt;
+            &lt;url&gt;https://repo.spring.io/snapshot&lt;/url&gt;
+            &lt;snapshots&gt;
+                &lt;enabled&gt;true&lt;/enabled&gt;
+            &lt;/snapshots&gt;
+        &lt;/repository&gt;
+    &lt;/repositories&gt;
+    &lt;pluginRepositories&gt;
+        &lt;pluginRepository&gt;
+            &lt;id&gt;spring-milestone&lt;/id&gt;
+            &lt;name&gt;Spring Milestone&lt;/name&gt;
+            &lt;url&gt;https://repo.spring.io/milestone&lt;/url&gt;
+            &lt;snapshots&gt;
+                &lt;enabled&gt;false&lt;/enabled&gt;
+            &lt;/snapshots&gt;
+        &lt;/pluginRepository&gt;
+        &lt;pluginRepository&gt;
+            &lt;id&gt;spring-snapshot&lt;/id&gt;
+            &lt;name&gt;Spring Snapshot&lt;/name&gt;
+            &lt;url&gt;https://repo.spring.io/snapshot&lt;/url&gt;
+            &lt;snapshots&gt;
+                &lt;enabled&gt;true&lt;/enabled&gt;
+            &lt;/snapshots&gt;
+        &lt;/pluginRepository&gt;
+    &lt;/pluginRepositories&gt;
+&lt;/project&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br></div></div><h2 id="服务注册与发现"><a href="#服务注册与发现" class="header-anchor">#</a> 服务注册与发现</h2> <h3 id="概述"><a href="#概述" class="header-anchor">#</a> 概述</h3> <p>由于我们已经有了 Nacos 注册中心，Sentinel 熔断限流控制中心，所以我们不再使用 Zookeeper 和 Dubbo Admin 来管理我们的 Dubbo 应用程序，Dubbo 仅当作我们微服务中的 RPC 通信框架，真正实现对内 RPC，对外 REST</p> <h3 id="创建服务提供者"><a href="#创建服务提供者" class="header-anchor">#</a> 创建服务提供者</h3> <h5 id="pom-3"><a href="#pom-3" class="header-anchor">#</a> POM</h5> <p>创建一个名为 <code>hello-apache-dubbo-provider</code> 的服务提供者项目，<code>pom.xml</code> 配置如下：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
+    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+    &lt;parent&gt;
+        &lt;groupId&gt;com.smxy&lt;/groupId&gt;
+        &lt;artifactId&gt;hello-apache-dubbo&lt;/artifactId&gt;
+        &lt;version&gt;0.0.1-SNAPSHOT&lt;/version&gt;
+    &lt;/parent&gt;
+    &lt;artifactId&gt;hello-apache-dubbo-provider&lt;/artifactId&gt;
+    &lt;packaging&gt;pom&lt;/packaging&gt;
+    &lt;url&gt;https://rxt520.github.io/Ruan.X.T.blog&lt;/url&gt;
+    &lt;inceptionYear&gt;2018-Now&lt;/inceptionYear&gt;
+    &lt;licenses&gt;
+        &lt;license&gt;
+            &lt;name&gt;Apache 2.0&lt;/name&gt;
+            &lt;url&gt;https://www.apache.org/licenses/LICENSE-2.0.txt&lt;/url&gt;
+        &lt;/license&gt;
+    &lt;/licenses&gt;
+    &lt;developers&gt;
+        &lt;developer&gt;
+            &lt;id&gt;ruanxiongteng&lt;/id&gt;
+            &lt;name&gt;Liberty ruan&lt;/name&gt;
+            &lt;email&gt;958465427@qq.com&lt;/email&gt;
+        &lt;/developer&gt;
+    &lt;/developers&gt;
+    &lt;modules&gt;
+        &lt;module&gt;hello-apache-dubbo-provider-api&lt;/module&gt;
+        &lt;module&gt;hello-apache-dubbo-provider-service&lt;/module&gt;
+    &lt;/modules&gt;
+&lt;/project&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br></div></div><h4 id="创建服务提供者接口模块"><a href="#创建服务提供者接口模块" class="header-anchor">#</a> 创建服务提供者接口模块</h4> <h5 id="pom-4"><a href="#pom-4" class="header-anchor">#</a> POM</h5> <p>创建一个名为 <code>hello-apache-dubbo-provider-api</code> 的模块（该模块只负责定义接口），<code>pom.xml</code> 配置如下：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
+    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+    &lt;parent&gt;
+        &lt;groupId&gt;com.smxy&lt;/groupId&gt;
+        &lt;artifactId&gt;hello-apache-dubbo-provider&lt;/artifactId&gt;
+        &lt;version&gt;0.0.1-SNAPSHOT&lt;/version&gt;
+    &lt;/parent&gt;
+    &lt;artifactId&gt;hello-apache-dubbo-provider-api&lt;/artifactId&gt;
+    &lt;packaging&gt;jar&lt;/packaging&gt;
+    &lt;url&gt;https://rxt520.github.io/Ruan.X.T.blog&lt;/url&gt;
+    &lt;inceptionYear&gt;2018-Now&lt;/inceptionYear&gt;
+    &lt;licenses&gt;
+        &lt;license&gt;
+            &lt;name&gt;Apache 2.0&lt;/name&gt;
+            &lt;url&gt;https://www.apache.org/licenses/LICENSE-2.0.txt&lt;/url&gt;
+        &lt;/license&gt;
+    &lt;/licenses&gt;
+    &lt;developers&gt;
+        &lt;developer&gt;
+            &lt;id&gt;ruanxiongteng&lt;/id&gt;
+            &lt;name&gt;Liberty ruan&lt;/name&gt;
+            &lt;email&gt;958465427@qq.com&lt;/email&gt;
+        &lt;/developer&gt;
+    &lt;/developers&gt;
+&lt;/project&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br></div></div><h5 id="定义接口"><a href="#定义接口" class="header-anchor">#</a> 定义接口</h5> <div class="language- line-numbers-mode"><pre class="language-text"><code>package com.smxy.apache.dubbo.provider.api;
+public interface EchoService {
+    String echo(String string);
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h4 id="创建服务提供者接口实现"><a href="#创建服务提供者接口实现" class="header-anchor">#</a> 创建服务提供者接口实现</h4> <h5 id="pom-5"><a href="#pom-5" class="header-anchor">#</a> POM</h5> <p>创建一个名为 <code>hello-apache-dubbo-provider-service</code> 的模块，<code>pom.xml</code> 配置如下：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
+    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+    &lt;parent&gt;
+        &lt;groupId&gt;com.smxy&lt;/groupId&gt;
+        &lt;artifactId&gt;hello-apache-dubbo-provider&lt;/artifactId&gt;
+        &lt;version&gt;0.0.1-SNAPSHOT&lt;/version&gt;
+    &lt;/parent&gt;
+    &lt;artifactId&gt;hello-apache-dubbo-provider-service&lt;/artifactId&gt;
+    &lt;packaging&gt;jar&lt;/packaging&gt;
+    &lt;url&gt;https://rxt520.github.io/Ruan.X.T.blog&lt;/url&gt;
+    &lt;inceptionYear&gt;2018-Now&lt;/inceptionYear&gt;
+    &lt;licenses&gt;
+        &lt;license&gt;
+            &lt;name&gt;Apache 2.0&lt;/name&gt;
+            &lt;url&gt;https://www.apache.org/licenses/LICENSE-2.0.txt&lt;/url&gt;
+        &lt;/license&gt;
+    &lt;/licenses&gt;
+    &lt;developers&gt;
+        &lt;developer&gt;
+            &lt;id&gt;ruanxiongteng&lt;/id&gt;
+            &lt;name&gt;Liberty ruan&lt;/name&gt;
+            &lt;email&gt;958465427@qq.com&lt;/email&gt;
+        &lt;/developer&gt;
+    &lt;/developers&gt;
+    &lt;dependencies&gt;
+        &lt;!-- Spring Boot Begin --&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-starter&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-starter-test&lt;/artifactId&gt;
+            &lt;scope&gt;test&lt;/scope&gt;
+        &lt;/dependency&gt;
+        &lt;!-- Spring Boot End --&gt;
+        &lt;!-- Apache Dubbo Begin --&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.apache.dubbo&lt;/groupId&gt;
+            &lt;artifactId&gt;dubbo-spring-boot-starter&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.apache.dubbo&lt;/groupId&gt;
+            &lt;artifactId&gt;dubbo&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;com.alibaba&lt;/groupId&gt;
+            &lt;artifactId&gt;dubbo-registry-nacos&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;com.alibaba.nacos&lt;/groupId&gt;
+            &lt;artifactId&gt;nacos-client&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;com.alibaba.spring&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-context-support&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;!-- Apache Dubbo End --&gt;
+        &lt;!-- Projects Begin --&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;com.smxy&lt;/groupId&gt;
+            &lt;artifactId&gt;hello-apache-dubbo-provider-api&lt;/artifactId&gt;
+            &lt;version&gt;${project.parent.version}&lt;/version&gt;
+        &lt;/dependency&gt;
+        &lt;!-- Projects End --&gt;
+    &lt;/dependencies&gt;
+    &lt;build&gt;
+        &lt;plugins&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+                &lt;artifactId&gt;spring-boot-maven-plugin&lt;/artifactId&gt;
+                &lt;configuration&gt;
+                    &lt;mainClass&gt;com.smxy.apache.dubbo.provider.ProviderApplication&lt;/mainClass&gt;
+                &lt;/configuration&gt;
+            &lt;/plugin&gt;
+        &lt;/plugins&gt;
+    &lt;/build&gt;
+&lt;/project&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br></div></div><h5 id="application-yml"><a href="#application-yml" class="header-anchor">#</a> application.yml</h5> <p>主要增加了 Dubbo 包扫描路径和 Nacos Server 配置</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>spring:
+  application:
+    name: dubbo-provider
+  main:
+    allow-bean-definition-overriding: true
+dubbo:
+  scan:
+    base-packages: com.smxy.apache.dubbo.provider.service
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    address: nacos://192.168.141.132:8848
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h5 id="application"><a href="#application" class="header-anchor">#</a> Application</h5> <div class="language- line-numbers-mode"><pre class="language-text"><code>package com.smxy.apache.dubbo.provider;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+@SpringBootApplication
+public class ProviderApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(ProviderApplication.class, args);
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h5 id="service"><a href="#service" class="header-anchor">#</a> Service</h5> <p>通过 <code>org.apache.dubbo</code> 包下的 <code>@Service</code> 注解将服务暴露出去</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>package com.smxy.apache.dubbo.provider.service;
+import ccom.smxyapache.dubbo.provider.api.EchoService;
+import org.apache.dubbo.config.annotation.Service;
+@Service(version = &quot;1.0.0&quot;)
+public class EchoServiceImpl implements EchoService {
+    @Override
+    public String echo(String string) {
+        return &quot;Echo Hello Dubbo &quot; + string;
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h5 id="验证是否成功"><a href="#验证是否成功" class="header-anchor">#</a> 验证是否成功</h5> <p>通过浏览器访问 <a href="http://192.168.141.132:8848/nacos" target="_blank" rel="noopener noreferrer">http://192.168.141.132:8848/nacos<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> Nacos Server 网址</p> <p><img src="http://www.qfdmy.com/wp-content/uploads/2019/08/b7ff926faa8e579.png" alt="img"></p> <p>你会发现一个服务已经注册在服务中了，服务名为 <code>providers:com.smxy.apache.dubbo.provider.api.EchoService:1.0.0:</code></p> <h3 id="创建服务消费者"><a href="#创建服务消费者" class="header-anchor">#</a> 创建服务消费者</h3> <h4 id="pom-6"><a href="#pom-6" class="header-anchor">#</a> POM</h4> <p>创建一个名为 <code>hello-apache-dubbo-consumer</code> 的服务消费者项目，<code>pom.xml</code> 配置如下：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
+    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+    &lt;parent&gt;
+        &lt;groupId&gt;com.smxy&lt;/groupId&gt;
+        &lt;artifactId&gt;hello-apache-dubbo&lt;/artifactId&gt;
+        &lt;version&gt;0.0.1-SNAPSHOT&lt;/version&gt;
+    &lt;/parent&gt;
+    &lt;artifactId&gt;hello-apache-dubbo-consumer&lt;/artifactId&gt;
+    &lt;packaging&gt;jar&lt;/packaging&gt;
+    &lt;url&gt;https://rxt520.github.io/Ruan.X.T.blog&lt;/url&gt;
+    &lt;inceptionYear&gt;2018-Now&lt;/inceptionYear&gt;
+    &lt;licenses&gt;
+        &lt;license&gt;
+            &lt;name&gt;Apache 2.0&lt;/name&gt;
+            &lt;url&gt;https://www.apache.org/licenses/LICENSE-2.0.txt&lt;/url&gt;
+        &lt;/license&gt;
+    &lt;/licenses&gt;
+    &lt;developers&gt;
+        &lt;developer&gt;
+            &lt;id&gt;ruanxiongteng&lt;/id&gt;
+            &lt;name&gt;Liberty ruan&lt;/name&gt;
+            &lt;email&gt;958465427@qq.com&lt;/email&gt;
+        &lt;/developer&gt;
+    &lt;/developers&gt;
+    &lt;dependencies&gt;
+        &lt;!-- Spring Boot Begin --&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-starter-actuator&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-starter-test&lt;/artifactId&gt;
+            &lt;scope&gt;test&lt;/scope&gt;
+        &lt;/dependency&gt;
+        &lt;!-- Spring Boot End --&gt;
+        &lt;!-- Apache Dubbo Begin --&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.apache.dubbo&lt;/groupId&gt;
+            &lt;artifactId&gt;dubbo-spring-boot-starter&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.apache.dubbo&lt;/groupId&gt;
+            &lt;artifactId&gt;dubbo-spring-boot-actuator&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.apache.dubbo&lt;/groupId&gt;
+            &lt;artifactId&gt;dubbo&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;com.alibaba&lt;/groupId&gt;
+            &lt;artifactId&gt;dubbo-registry-nacos&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;com.alibaba.nacos&lt;/groupId&gt;
+            &lt;artifactId&gt;nacos-client&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;com.alibaba.spring&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-context-support&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;!-- Apache Dubbo End --&gt;
+        &lt;!-- Projects Begin --&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;ccom.smxy&lt;/groupId&gt;
+            &lt;artifactId&gt;hello-apache-dubbo-provider-api&lt;/artifactId&gt;
+            &lt;version&gt;${project.parent.version}&lt;/version&gt;
+        &lt;/dependency&gt;
+        &lt;!-- Projects End --&gt;
+    &lt;/dependencies&gt;
+    &lt;build&gt;
+        &lt;plugins&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+                &lt;artifactId&gt;spring-boot-maven-plugin&lt;/artifactId&gt;
+                &lt;configuration&gt;
+                    &lt;mainClass&gt;cocom.smxy.apache.dubbo.consumer.ConsumerApplication&lt;/mainClass&gt;
+                &lt;/configuration&gt;
+            &lt;/plugin&gt;
+        &lt;/plugins&gt;
+    &lt;/build&gt;
+&lt;/project&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br></div></div><h4 id="application-yml-2"><a href="#application-yml-2" class="header-anchor">#</a> application.yml</h4> <p>主要增加了 Dubbo 包扫描路径、健康检查以及 Nacos Server 配置</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>spring:
+  application:
+    name: dubbo-consumer
+  main:
+    allow-bean-definition-overriding: true
+dubbo:
+  scan:
+    base-packages: com.smxy.apache.dubbo.consumer.controller
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    address: nacos://192.168.12.130:8848
+server:
+  port: 8080
+endpoints:
+  dubbo:
+    enabled: true
+management:
+  health:
+    dubbo:
+      status:
+        defaults: memory
+        extras: threadpool
+  endpoints:
+    web:
+      exposure:
+        include: &quot;*&quot;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br></div></div><h4 id="application-2"><a href="#application-2" class="header-anchor">#</a> Application</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>package com.smxy.apache.dubbo.consumer;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+@SpringBootApplication
+public class ConsumerApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(ConsumerApplication.class, args);
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h4 id="controller"><a href="#controller" class="header-anchor">#</a> Controller</h4> <p>通过 <code>org.apache.dubbo</code> 包下的 <code>@Reference</code> 注解像调用本地服务一样调用远程服务，轻松实现透明的远程过程调用</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>package com.smxy.apache.dubbo.consumer.controller;
+import ccom.smxyapache.dubbo.provider.api.EchoService;
+import org.apache.dubbo.config.annotation.Reference;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
+@RestController
+public class EchoController {
+    @Reference(version = &quot;1.0.0&quot;)
+    private EchoService echoService;
+    @GetMapping(value = &quot;/echo/{string}&quot;)
+    public String echo(@PathVariable String string) {
+        return echoService.echo(string);
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h4 id="验证是否成功-2"><a href="#验证是否成功-2" class="header-anchor">#</a> 验证是否成功</h4> <p>通过浏览器访问 <a href="http://192.168.141.132:8848/nacos" target="_blank" rel="noopener noreferrer">http://192.168.141.132:8848/nacos<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> Nacos Server 网址</p> <p><img src="http://www.qfdmy.com/wp-content/uploads/2019/08/c6375bd2296fd84.png" alt="img"></p> <p>你会发现一个服务已经注册在服务中了，服务名为 <code>consumers:com.smxy.apache.dubbo.provider.api.EchoService:1.0.0:</code>，通过浏览器访问 <a href="%5Bhttp://localhost:8080/echo/hi%5D(http://www.qfdmy.com/wp-content/themes/quanbaike/go.php?url=aHR0cDovL2xvY2FsaG9zdDo4MDgwL2VjaG8vaGk=)">http://localhost:8080/echo/hi</a></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Echo Hello Dubbo hi
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="服务端点检查"><a href="#服务端点检查" class="header-anchor">#</a> 服务端点检查</h4> <p>通过浏览器访问 <a href="http://localhost:8080/actuator/health" target="_blank" rel="noopener noreferrer">http://localhost:8080/actuator/health<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>{    &quot;status&quot;: &quot;UP&quot;}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="dubbo-中的序列化"><a href="#dubbo-中的序列化" class="header-anchor">#</a> Dubbo 中的序列化</h2> <p>Dubbo RPC 是 Dubbo 体系中最核心的一种高性能、高吞吐量的远程调用方式，可以称之为多路复用的 TCP 长连接调用：</p> <ul><li><strong>长连接：</strong> 避免了每次调用新建 TCP 连接，提高了调用的响应速度</li> <li><strong>多路复用：</strong> 单个 TCP 连接可交替传输多个请求和响应的消息，降低了连接的等待闲置时间，从而减少了同样并发数下的网络连接数，提高了系统吞吐量</li></ul> <p>Dubbo RPC 主要用于两个 Dubbo 系统之间的远程调用，特别适合高并发、小数据的互联网场景。而序列化对于远程调用的响应速度、吞吐量、网络带宽消耗等同样也起着至关重要的作用，是我们提升分布式系统性能的最关键因素之一。</p> <p>Dubbo 中支持的序列化方式：</p> <ul><li><strong>dubbo 序列化：</strong> 阿里尚未开发成熟的高效 Java 序列化实现，阿里不建议在生产环境使用它</li> <li><strong>hessian2 序列化：</strong> hessian 是一种跨语言的高效二进制序列化方式。但这里实际不是原生的 hessian2 序列化，而是阿里修改过的 hessian lite，它是 dubbo RPC 默认启用的序列化方式</li> <li><strong>json 序列化：</strong> 目前有两种实现，一种是采用的阿里的 fastjson 库，另一种是采用 dubbo 中自己实现的简单 json 库，但其实现都不是特别成熟，而且 json 这种文本序列化性能一般不如上面两种二进制序列化。</li> <li><strong>java 序列化：</strong> 主要是采用 JDK 自带的 Java 序列化实现，性能很不理想。</li></ul> <p>在通常情况下，这四种主要序列化方式的性能从上到下依次递减。对于 dubbo RPC 这种追求高性能的远程调用方式来说，实际上只有 1、2 两种高效序列化方式比较般配，而第 1 个 dubbo 序列化由于还不成熟，所以实际只剩下 2 可用，所以 dubbo RPC 默认采用 hessian2 序列化。</p> <p>但 hessian 是一个比较老的序列化实现了，而且它是跨语言的，所以不是单独针对 Java 进行优化的。而 dubbo RPC 实际上完全是一种 Java to Java 的远程调用，其实没有必要采用跨语言的序列化方式（当然肯定也不排斥跨语言的序列化）。</p> <p>最近几年，各种新的高效序列化方式层出不穷，不断刷新序列化性能的上限，最典型的包括：</p> <ul><li>专门针对 Java 语言的：<strong>Kryo</strong>，FST 等等</li> <li>跨语言的：Protostuff，ProtoBuf，<strong>Thrift</strong>，Avro，MsgPack 等等</li></ul> <p>这些序列化方式的性能多数都显著优于 hessian2（甚至包括尚未成熟的 dubbo 序列化），有鉴于此，我们为 dubbo 引入 Kryo 和 FST 这两种高效 Java 序列化实现，来逐步取代 hessian2。</p> <p>其中，Kryo 是一种非常成熟的序列化实现，已经在 Twitter、Groupon、Yahoo 以及多个著名开源项目（如 Hive、Storm）中广泛的使用。而 FST 是一种较新的序列化实现，目前还缺乏足够多的成熟使用案例。</p> <blockquote><p><strong>注意：</strong> 在面向生产环境的应用中，目前更优先选择 Kryo</p></blockquote> <h3 id="启用-kryo"><a href="#启用-kryo" class="header-anchor">#</a> 启用 Kryo</h3> <p>在 Provider 和 Consumer 项目启用 Kryo 高速序列化功能，两个项目的配置方式相同</p> <h4 id="pom-7"><a href="#pom-7" class="header-anchor">#</a> POM</h4> <p>增加 <code>org.apache.dubbo:dubbo-serialization-kryo</code> 依赖</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;properties&gt;
+    &lt;dubbo-kryo.version&gt;2.7.2&lt;/dubbo-kryo.version&gt;
+&lt;/properties&gt;
+&lt;dependency&gt;
+    &lt;groupId&gt;org.apache.dubbo&lt;/groupId&gt;
+    &lt;artifactId&gt;dubbo-serialization-kryo&lt;/artifactId&gt;
+    &lt;version&gt;${dubbo-kryo.version}&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h4 id="application-yml-3"><a href="#application-yml-3" class="header-anchor">#</a> application.yml</h4> <p>增加 <code>dubbo.protocol.serialization=kryo</code> 配置</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>dubbo:
+  protocol:
+    serialization: kryo
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h4 id="序列化类说明"><a href="#序列化类说明" class="header-anchor">#</a> 序列化类说明</h4> <blockquote><p><strong>注意：</strong> 想要使用 Kryo 序列化只需要 DTO/Domain/Entity 这类传输对象实现序列化接口即可，无需额外再做配置，如：<code>public class User implements Serializable{}</code></p></blockquote> <p>在对一个类做序列化的时候，可能还级联引用到很多类，比如 Java 集合类。针对这种情况，Dubbo 已经自动将 JDK 中的常用类进行了注册，包括：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>GregorianCalendar
+InvocationHandler
+BigDecimal
+BigInteger
+Pattern
+BitSet
+URI
+UUID
+HashMap
+ArrayList
+LinkedList
+HashSet
+TreeSet
+Hashtable
+Date
+Calendar
+ConcurrentHashMap
+SimpleDateFormat
+Vector
+BitSet
+StringBuffer
+StringBuilder
+Object
+Object[]
+String[]
+byte[]
+char[]
+int[]
+float[]
+double[]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br></div></div><p>由于注册被序列化的类仅仅是出于性能优化的目的，所以即使你忘记注册某些类也没有关系。事实上，即使不注册任何类，Kryo 和 FST 的性能依然普遍优于 hessian 和 dubbo 序列化。</p> <h3 id="附：扩展阅读-2"><a href="#附：扩展阅读-2" class="header-anchor">#</a> 附：扩展阅读</h3> <h4 id="序列化性能分析与测试"><a href="#序列化性能分析与测试" class="header-anchor">#</a> 序列化性能分析与测试</h4> <h5 id="测试环境"><a href="#测试环境" class="header-anchor">#</a> 测试环境</h5> <ul><li>两台独立服务器</li> <li>4 核 Intel(R) Xeon(R) CPU E5-2603 0 @ 1.80GHz</li> <li>8G 内存</li> <li>虚拟机之间网络通过百兆交换机</li> <li>CentOS 5</li> <li>JDK 7</li> <li>Tomcat 7</li> <li>JVM 参数 <code>-server -Xms1g -Xmx1g -XX:PermSize=64M -XX:+UseConcMarkSweepGC</code></li></ul> <blockquote><p><strong>注意：</strong> 当然这个测试环境较有局限，故当前测试结果未必有非常权威的代表性</p></blockquote> <h5 id="测试脚本"><a href="#测试脚本" class="header-anchor">#</a> 测试脚本</h5> <p>和 dubbo 自身的基准测试保持接近，10 个并发客户端持续不断发出请求：</p> <ul><li>传入嵌套复杂对象（但单个数据量很小），不做任何处理，原样返回</li> <li>传入 50K 字符串，不做任何处理，原样返回（TODO：结果尚未列出）</li></ul> <p>进行 5 分钟性能测试。（引用 dubbo 自身测试的考虑：“主要考察序列化和网络 IO 的性能，因此服务端无任何业务逻辑。<strong>取 10 并发是考虑到 HTTP 协议在高并发下对 CPU 的使用率较高可能会先达到瓶颈。</strong>”）</p> <h5 id="dubbo-rpc-中不同序列化生成字节大小比较"><a href="#dubbo-rpc-中不同序列化生成字节大小比较" class="header-anchor">#</a> Dubbo RPC 中不同序列化生成字节大小比较</h5> <p>序列化生成字节码的大小是一个比较有确定性的指标，它决定了远程调用的网络传输时间和带宽占用。针对复杂对象的结果如下（数值越小越好）：</p> <p><img src="http://www.qfdmy.com/wp-content/uploads/2019/08/9f13cfc86553e42.png" alt="img"></p> <p><img src="http://www.qfdmy.com/wp-content/uploads/2019/08/4b3a6218bb3e3a7.png" alt="img"></p> <h5 id="dubbo-rpc-中不同序列化响应时间和吞吐量对比"><a href="#dubbo-rpc-中不同序列化响应时间和吞吐量对比" class="header-anchor">#</a> Dubbo RPC 中不同序列化响应时间和吞吐量对比</h5> <p><img src="http://www.qfdmy.com/wp-content/uploads/2019/08/14fdadbbd525f56.png" alt="img"></p> <p><img src="http://www.qfdmy.com/wp-content/uploads/2019/08/822050d9ae3c47f.png" alt="img"></p> <p><img src="http://www.qfdmy.com/wp-content/uploads/2019/08/339a57d16284b3a.png" alt="img"></p> <h5 id="结论"><a href="#结论" class="header-anchor">#</a> 结论</h5> <p>就目前结果而言，我们可以看到不管从生成字节的大小，还是平均响应时间和平均 TPS，Kryo 和 FST 相比 Dubbo RPC 中原有的序列化方式都有非常显著的改进。</p> <h2 id="dubbo-负载均衡"><a href="#dubbo-负载均衡" class="header-anchor">#</a> Dubbo 负载均衡</h2> <h2 id="概述-2"><a href="#概述-2" class="header-anchor">#</a> 概述</h2> <p>在集群负载均衡时，Dubbo 提供了多种均衡策略，缺省为 <code>random</code> 随机调用。</p> <h2 id="负载均衡策略"><a href="#负载均衡策略" class="header-anchor">#</a> 负载均衡策略</h2> <h3 id="随机"><a href="#随机" class="header-anchor">#</a> 随机</h3> <p><strong>Random LoadBalance：</strong> 按权重设置随机概率，在一个截面上碰撞的概率高，但调用量越大分布越均匀，而且按概率使用权重后也比较均匀，有利于动态调整提供者权重。</p> <h3 id="轮循"><a href="#轮循" class="header-anchor">#</a> 轮循</h3> <p><strong>RoundRobin LoadBalance：</strong> 按公约后的权重设置轮询比率，存在慢的提供者累积请求的问题，比如：第二台机器很慢，但没挂，当请求调到第二台时就卡在那，久而久之，所有请求都卡在调到第二台上。</p> <h3 id="最少活跃调用数"><a href="#最少活跃调用数" class="header-anchor">#</a> 最少活跃调用数</h3> <p><strong>LeastActive LoadBalance：</strong> 相同活跃数的随机，活跃数指调用前后计数差，使慢的提供者收到更少请求，因为越慢的提供者的调用前后计数差会越大。</p> <h3 id="一致性-hash"><a href="#一致性-hash" class="header-anchor">#</a> 一致性 Hash</h3> <p><strong>ConsistentHash LoadBalance：</strong> 相同参数的请求总是发到同一提供者。当某一台提供者挂时，原本发往该提供者的请求，基于虚拟节点，平摊到其它提供者，不会引起剧烈变动。</p> <p>算法参见：<a href="http://en.wikipedia.org/wiki/Consistent_hashing" target="_blank" rel="noopener noreferrer">http://en.wikipedia.org/wiki/Consistent_hashing<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> ，缺省只对第一个参数 Hash，如果要修改，请配置 <code>，缺省用 160 份虚拟节点，如果要修改，请配置</code></p> <h3 id="配置负载均衡"><a href="#配置负载均衡" class="header-anchor">#</a> 配置负载均衡</h3> <ul><li>修改 <code>dubbo-provider</code> 项目的负载均衡策略，默认的负载均衡策略是 <strong>随机</strong>，我们修改为 <strong>轮循</strong>，可配置的值分别是：<code>random</code>，<code>roundrobin</code>，<code>leastactive</code>，<code>consistenthash</code></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>dubbo:  provider:    loadbalance: roundrobin
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>修改 <code>dubbo-provider</code> 的协议端口为 20880 和 20881，并启动多个实例，IDEA 中依次点击 <strong>Run</strong> -&gt; <strong>Edit Configurations</strong> 并勾选 <strong>Allow parallel run</strong> 以允许 IDEA 多实例运行项目</li></ul> <p><img src="http://www.qfdmy.com/wp-content/uploads/2019/08/9b0a0ba30182ae3.png" alt="img"></p> <ul><li>Nacos Server 控制台可以看到 <code>dubbo-provider</code> 有 2 个实例</li></ul> <p><img src="http://www.qfdmy.com/wp-content/uploads/2019/08/6b78be78da8dc0a.png" alt="img"></p> <ul><li>修改 <code>dubbo-provider</code> 项目的 <code>EchoServiceImpl</code> 中的测试方法</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>package com.funtl.apache.dubbo.provider.service;
+import com.funtl.apache.dubbo.provider.api.EchoService;
+import org.apache.dubbo.config.annotation.Service;
+import org.springframework.beans.factory.annotation.Value;
+@Service(version = &quot;1.0.0&quot;)
+public class EchoServiceImpl implements EchoService {
+    @Value(&quot;${dubbo.protocol.port}&quot;)
+    private String port;
+    @Override
+    public String echo(String string) {
+        return &quot;Echo Hello Dubbo &quot; + string + &quot; i am from port: &quot; + port;
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><ul><li>重启服务，通过浏览器访问 <a href="http://localhost:8080/echo/hi" target="_blank" rel="noopener noreferrer">http://localhost:8080/echo/hi<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> ，反复刷新浏览器，浏览器交替显示</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>Echo Hello Dubbo hi i am from port: 20880
+Echo Hello Dubbo hi i am from port: 20881
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h2 id="dubbo-外部化配置"><a href="#dubbo-外部化配置" class="header-anchor">#</a> Dubbo 外部化配置</h2> <h2 id="概述-3"><a href="#概述-3" class="header-anchor">#</a> 概述</h2> <p>由于我们已经使用了 Nacos Server 作为我们的注册中心，所以此处依然使用 Nacos Config 实现 Dubbo 的外部化配置</p> <h2 id="接入配置中心"><a href="#接入配置中心" class="header-anchor">#</a> 接入配置中心</h2> <h3 id="pom-8"><a href="#pom-8" class="header-anchor">#</a> POM</h3> <p>我们以 <code>dubbo-consumer</code> 项目为例，修改 <code>pom.xml</code> ，引入 <strong>Nacos Config Starter</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-cloud-starter-alibaba-nacos-config&lt;/artifactId&gt;
+&lt;/dependency&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="controller-2"><a href="#controller-2" class="header-anchor">#</a> Controller</h3> <p>完成上述两步后，应用会从 Nacos Config 中获取相应的配置，并添加在 Spring Environment 的 PropertySources 中。这里我们使用 <code>@Value</code> 注解来将对应的配置注入到 <code>EchoController</code> 的 <code>username</code>字段，并添加 <code>@RefreshScope</code> 打开动态刷新功能</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>package com.funtl.apache.dubbo.consumer.controller;
+import com.funtl.apache.dubbo.provider.api.EchoService;
+import org.apache.dubbo.config.annotation.Reference;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
+@RefreshScope
+@RestController
+public class EchoController {
+    @Reference(version = &quot;1.0.0&quot;)
+    private EchoService echoService;
+    @Value(&quot;${user.name}&quot;)
+    private String username;
+    @GetMapping(value = &quot;/echo/{string}&quot;)
+    public String echo(@PathVariable String string) {
+        return echoService.echo(string) + &quot; &quot; + username;
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><h3 id="使用控制台发布配置"><a href="#使用控制台发布配置" class="header-anchor">#</a> 使用控制台发布配置</h3> <p>创建DATA ID：dubbo-consumer-config.yaml</p> <blockquote><p><strong>注意：</strong> Data ID 的默认扩展名为 <code>.properties</code> ，希望使用 YAML 配置，此处必须指明是 <code>.yaml</code></p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>spring:
+  application:
+    name: dubbo-consumer
+  main:
+    allow-bean-definition-overriding: true
+dubbo:
+  scan:
+    base-packages: com.smxy.apache.dubbo.consumer.controller
+  protocol:
+    name: dubbo
+    port: -1
+    serialization: kryo
+  registry:
+    address: nacos://192.168.12.130:8848
+server:
+  port: 8080
+endpoints:
+  dubbo:
+    enabled: true
+management:
+  health:
+    dubbo:
+      status:
+        defaults: memory
+        extras: threadpool
+  endpoints:
+    web:
+      exposure:
+        include: &quot;*&quot;
+user:
+  name: RXT
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br></div></div><h3 id="修改客户端配置"><a href="#修改客户端配置" class="header-anchor">#</a> 修改客户端配置</h3> <p>创建名为 <code>bootstrap.properties</code> 的配置文件并删除之前创建的 <code>application.yml</code> 配置文件</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>spring.application.name=dubbo-consumer-config
+spring.cloud.nacos.config.server-addr=192.168.141.132:8848
+spring.cloud.nacos.config.file-extension=yaml
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>通过浏览器访问 <a href="http://localhost:8080/echo/hi" target="_blank" rel="noopener noreferrer">http://localhost:8080/echo/hi<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> ，浏览器输出如下</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Echo Hello Dubbo hi i am from port: -1 唯我成幸
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="动态刷新配置"><a href="#动态刷新配置" class="header-anchor">#</a> 动态刷新配置</h3> <p>在 Nacos Server 控制台修改配置文件，将 <code>user.name</code> 属性修改为 <code>桐须真冬</code>，此时观察控制台日志，你会发现我们已经成功刷新了配置</p> <p><img src="http://www.qfdmy.com/wp-content/uploads/2019/08/a2aba035cf4a0c2.png" alt="img"></p> <h3 id="验证是否成功-3"><a href="#验证是否成功-3" class="header-anchor">#</a> 验证是否成功</h3> <p>通过浏览器访问 <a href="http://www.qfdmy.com/wp-content/themes/quanbaike/go.php?url=aHR0cDovL2xvY2FsaG9zdDo4MDgwL2VjaG8vaGk=" target="_blank" rel="noopener noreferrer">http://localhost:8080/echo/hi<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> ，浏览器输出如下</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Echo Hello Dubbo hi i am from port: -1 桐须真冬
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><blockquote><p><strong>提示：</strong> 你可以使用 <code>spring.cloud.nacos.config.refresh.enabled=false</code> 来关闭动态刷新</p></blockquote></div> <footer class="page-edit" style="display:none;"><!----> <!----></footer> <!----> <!----></main> <!----> <div class="comments-wrapper" data-v-4698c43e><!----></div></div></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-a81d141e data-v-a81d141e><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-a81d141e><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-a81d141e></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-a81d141e></path></svg></div></div></div>
+    <script src="/assets/js/app.20e080e3.js" defer></script><script src="/assets/js/3.69b4042a.js" defer></script><script src="/assets/js/1.c4c6ad86.js" defer></script><script src="/assets/js/28.04fb7d74.js" defer></script>
+  </body>
+</html>

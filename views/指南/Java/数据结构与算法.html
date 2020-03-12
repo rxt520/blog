@@ -1,0 +1,2087 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>数据结构与算法 | blog</title>
+    <meta name="description" content="blog">
+    <meta name="generator" content="VuePress 1.3.1">
+    <link rel="icon" href="/favicon.ico">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.29b4407c.css" as="style"><link rel="preload" href="/assets/js/app.20e080e3.js" as="script"><link rel="preload" href="/assets/js/3.69b4042a.js" as="script"><link rel="preload" href="/assets/js/1.c4c6ad86.js" as="script"><link rel="preload" href="/assets/js/13.606381d5.js" as="script"><link rel="prefetch" href="/assets/js/10.fbf5bf0b.js"><link rel="prefetch" href="/assets/js/11.89c72eac.js"><link rel="prefetch" href="/assets/js/12.8f3fc90e.js"><link rel="prefetch" href="/assets/js/14.7a61181a.js"><link rel="prefetch" href="/assets/js/15.2595a1ba.js"><link rel="prefetch" href="/assets/js/16.3a0abb52.js"><link rel="prefetch" href="/assets/js/17.6a344db1.js"><link rel="prefetch" href="/assets/js/18.4bf78878.js"><link rel="prefetch" href="/assets/js/19.8f00e0c6.js"><link rel="prefetch" href="/assets/js/20.260311cc.js"><link rel="prefetch" href="/assets/js/21.8578208c.js"><link rel="prefetch" href="/assets/js/22.20e75bd8.js"><link rel="prefetch" href="/assets/js/23.363521a2.js"><link rel="prefetch" href="/assets/js/24.15a014dc.js"><link rel="prefetch" href="/assets/js/25.f74701fe.js"><link rel="prefetch" href="/assets/js/26.9805c56f.js"><link rel="prefetch" href="/assets/js/27.c059cd71.js"><link rel="prefetch" href="/assets/js/28.04fb7d74.js"><link rel="prefetch" href="/assets/js/29.b1ef7687.js"><link rel="prefetch" href="/assets/js/30.5fb4a460.js"><link rel="prefetch" href="/assets/js/31.860de359.js"><link rel="prefetch" href="/assets/js/32.d40511a0.js"><link rel="prefetch" href="/assets/js/33.abe76948.js"><link rel="prefetch" href="/assets/js/34.c95627c4.js"><link rel="prefetch" href="/assets/js/35.884b7ac2.js"><link rel="prefetch" href="/assets/js/36.ce4ffc06.js"><link rel="prefetch" href="/assets/js/37.ed7666d7.js"><link rel="prefetch" href="/assets/js/38.6efa9d7f.js"><link rel="prefetch" href="/assets/js/39.ff98a367.js"><link rel="prefetch" href="/assets/js/4.295bb786.js"><link rel="prefetch" href="/assets/js/40.040344ed.js"><link rel="prefetch" href="/assets/js/41.79742567.js"><link rel="prefetch" href="/assets/js/42.bea47c85.js"><link rel="prefetch" href="/assets/js/43.14107803.js"><link rel="prefetch" href="/assets/js/44.f793a44c.js"><link rel="prefetch" href="/assets/js/45.293deda9.js"><link rel="prefetch" href="/assets/js/46.025ac826.js"><link rel="prefetch" href="/assets/js/47.9857334e.js"><link rel="prefetch" href="/assets/js/48.4d7aeb19.js"><link rel="prefetch" href="/assets/js/5.6ab23509.js"><link rel="prefetch" href="/assets/js/6.a01c80cf.js"><link rel="prefetch" href="/assets/js/7.6ced6a0e.js"><link rel="prefetch" href="/assets/js/8.3a631268.js"><link rel="prefetch" href="/assets/js/9.09f4064e.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.29b4407c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div><div class="theme-container" data-v-4698c43e><div data-v-4698c43e><div id="loader-wrapper" class="loading-wrapper" data-v-4b73742e data-v-4698c43e data-v-4698c43e><div class="loader-main" data-v-4b73742e><div data-v-4b73742e></div><div data-v-4b73742e></div><div data-v-4b73742e></div><div data-v-4b73742e></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-6cbeab0a data-v-4698c43e data-v-4698c43e><h3 class="title" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a>blog</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><input type="password" value="" data-v-6cbeab0a> <span data-v-6cbeab0a>Konck! Knock!</span> <button data-v-6cbeab0a>OK</button></label> <div class="footer" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><span data-v-6cbeab0a><i class="iconfont reco-theme" data-v-6cbeab0a></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-6cbeab0a>vuePress-theme-reco</a></span> <span data-v-6cbeab0a><i class="iconfont reco-copyright" data-v-6cbeab0a></i> <a data-v-6cbeab0a><span data-v-6cbeab0a>blog</span>
+            
+          <span data-v-6cbeab0a>2019 - </span>
+          2020
+        </a></span></div></div> <div class="hide" data-v-4698c43e><header class="navbar" data-v-4698c43e><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="blog" class="logo"> <span class="site-name">blog</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      Category
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/Linux/" class="nav-link"><i class="iconfont undefined"></i>
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/categories/java/" class="nav-link"><i class="iconfont undefined"></i>
+  java
+</a></li><li class="dropdown-item"><!----> <a href="/categories/java 后端/" class="nav-link"><i class="iconfont undefined"></i>
+  java 后端
+</a></li><li class="dropdown-item"><!----> <a href="/categories/typora/" class="nav-link"><i class="iconfont undefined"></i>
+  typora
+</a></li><li class="dropdown-item"><!----> <a href="/categories/vue/" class="nav-link"><i class="iconfont undefined"></i>
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/categories/java 基础/" class="nav-link"><i class="iconfont undefined"></i>
+  java 基础
+</a></li><li class="dropdown-item"><!----> <a href="/categories/编程方法/" class="nav-link"><i class="iconfont undefined"></i>
+  编程方法
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Mysql/" class="nav-link"><i class="iconfont undefined"></i>
+  Mysql
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-npm"></i>
+      在线工具
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://smallpdf.com/cn/pdf-to-word" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  PDF 转换器
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://www.bejson.com/jsoneditoronline" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  JSON 编辑器
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://tableconvert.com/?output=text" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  MD 表格生成器
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="http://cron.qqe2.com/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  CRON 表达式
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="http://tool.oschina.net/codeformat/html" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  代码格式化
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://zh.numberempire.com/latexequationeditor.php" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  公式编辑器
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://cli.im/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  二维码生成器
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="http://tool.chinaz.com/tools/native_ascii.aspx" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  在线编码转换
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="http://www.toyaml.com" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  YAML &lt;-&gt; Properties
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://jsfiddle.net/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  在线 Web 练习
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://www.github.com/rxt520" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="/views/%E6%8C%87%E5%8D%97/Java/.html" class="nav-link"><i class="iconfont reco-jianshu"></i>
+  简书
+</a></li><li class="dropdown-item"><!----> <a href="/views/%E6%8C%87%E5%8D%97/Java/.html" class="nav-link"><i class="iconfont reco-csdn"></i>
+  CSDN
+</a></li><li class="dropdown-item"><!----> <a href="/views/%E6%8C%87%E5%8D%97/Java/.html" class="nav-link"><i class="iconfont reco-bokeyuan"></i>
+  博客圆
+</a></li><li class="dropdown-item"><!----> <a href="/views/%E6%8C%87%E5%8D%97/Java/.html" class="nav-link"><i class="iconfont reco-wechat"></i>
+  WeChat
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-4698c43e></div> <aside class="sidebar" data-v-4698c43e><div class="personal-info-wrapper" data-v-6c8ffc9c><img src="/avatar.png" alt="author-avatar" class="personal-img" data-v-6c8ffc9c> <h3 class="name" data-v-6c8ffc9c>
+    blog
+  </h3> <div class="num" data-v-6c8ffc9c><div data-v-6c8ffc9c><h3 data-v-6c8ffc9c>23</h3> <h6 data-v-6c8ffc9c>文章</h6></div> <div data-v-6c8ffc9c><h3 data-v-6c8ffc9c>16</h3> <h6 data-v-6c8ffc9c>标签</h6></div></div> <hr data-v-6c8ffc9c></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      Category
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/Linux/" class="nav-link"><i class="iconfont undefined"></i>
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/categories/java/" class="nav-link"><i class="iconfont undefined"></i>
+  java
+</a></li><li class="dropdown-item"><!----> <a href="/categories/java 后端/" class="nav-link"><i class="iconfont undefined"></i>
+  java 后端
+</a></li><li class="dropdown-item"><!----> <a href="/categories/typora/" class="nav-link"><i class="iconfont undefined"></i>
+  typora
+</a></li><li class="dropdown-item"><!----> <a href="/categories/vue/" class="nav-link"><i class="iconfont undefined"></i>
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/categories/java 基础/" class="nav-link"><i class="iconfont undefined"></i>
+  java 基础
+</a></li><li class="dropdown-item"><!----> <a href="/categories/编程方法/" class="nav-link"><i class="iconfont undefined"></i>
+  编程方法
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Mysql/" class="nav-link"><i class="iconfont undefined"></i>
+  Mysql
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-npm"></i>
+      在线工具
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://smallpdf.com/cn/pdf-to-word" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  PDF 转换器
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://www.bejson.com/jsoneditoronline" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  JSON 编辑器
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://tableconvert.com/?output=text" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  MD 表格生成器
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="http://cron.qqe2.com/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  CRON 表达式
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="http://tool.oschina.net/codeformat/html" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  代码格式化
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://zh.numberempire.com/latexequationeditor.php" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  公式编辑器
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://cli.im/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  二维码生成器
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="http://tool.chinaz.com/tools/native_ascii.aspx" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  在线编码转换
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="http://www.toyaml.com" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  YAML &lt;-&gt; Properties
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://jsfiddle.net/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  在线 Web 练习
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://www.github.com/rxt520" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="/views/%E6%8C%87%E5%8D%97/Java/.html" class="nav-link"><i class="iconfont reco-jianshu"></i>
+  简书
+</a></li><li class="dropdown-item"><!----> <a href="/views/%E6%8C%87%E5%8D%97/Java/.html" class="nav-link"><i class="iconfont reco-csdn"></i>
+  CSDN
+</a></li><li class="dropdown-item"><!----> <a href="/views/%E6%8C%87%E5%8D%97/Java/.html" class="nav-link"><i class="iconfont reco-bokeyuan"></i>
+  博客圆
+</a></li><li class="dropdown-item"><!----> <a href="/views/%E6%8C%87%E5%8D%97/Java/.html" class="nav-link"><i class="iconfont reco-wechat"></i>
+  WeChat
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>数据结构与算法</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/views/%E6%8C%87%E5%8D%97/Java/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95.html#排序算法" class="sidebar-link">排序算法</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/views/%E6%8C%87%E5%8D%97/Java/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95.html#算法时间复杂度" class="sidebar-link">算法时间复杂度</a></li><li class="sidebar-sub-header"><a href="/views/%E6%8C%87%E5%8D%97/Java/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95.html#冒泡排序及优化" class="sidebar-link">冒泡排序及优化</a></li><li class="sidebar-sub-header"><a href="/views/%E6%8C%87%E5%8D%97/Java/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95.html#选择排序" class="sidebar-link">选择排序</a></li><li class="sidebar-sub-header"><a href="/views/%E6%8C%87%E5%8D%97/Java/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95.html#插入排序" class="sidebar-link">插入排序</a></li><li class="sidebar-sub-header"><a href="/views/%E6%8C%87%E5%8D%97/Java/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95.html#希尔排序" class="sidebar-link">希尔排序</a></li><li class="sidebar-sub-header"><a href="/views/%E6%8C%87%E5%8D%97/Java/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95.html#快速排序" class="sidebar-link">快速排序</a></li><li class="sidebar-sub-header"><a href="/views/%E6%8C%87%E5%8D%97/Java/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95.html#归并排序" class="sidebar-link">归并排序</a></li><li class="sidebar-sub-header"><a href="/views/%E6%8C%87%E5%8D%97/Java/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95.html#基数排序" class="sidebar-link">基数排序</a></li><li class="sidebar-sub-header"><a href="/views/%E6%8C%87%E5%8D%97/Java/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95.html#排序算法的比较" class="sidebar-link">排序算法的比较</a></li><li class="sidebar-sub-header"><a href="/views/%E6%8C%87%E5%8D%97/Java/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95.html#所有排序算法的整合" class="sidebar-link">所有排序算法的整合</a></li></ul></li><li><a href="/views/%E6%8C%87%E5%8D%97/Java/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95.html#查找算法" class="sidebar-link">查找算法</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/views/%E6%8C%87%E5%8D%97/Java/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95.html#二分查找" class="sidebar-link">二分查找</a></li><li class="sidebar-sub-header"><a href="/views/%E6%8C%87%E5%8D%97/Java/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95.html#插值查找" class="sidebar-link">插值查找</a></li><li class="sidebar-sub-header"><a href="/views/%E6%8C%87%E5%8D%97/Java/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95.html#斐波那契查找" class="sidebar-link">斐波那契查找</a></li></ul></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-6cbeab0a data-v-4698c43e><h3 class="title" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a></h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><input type="password" value="" data-v-6cbeab0a> <span data-v-6cbeab0a>Konck! Knock!</span> <button data-v-6cbeab0a>OK</button></label> <div class="footer" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><span data-v-6cbeab0a><i class="iconfont reco-theme" data-v-6cbeab0a></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-6cbeab0a>vuePress-theme-reco</a></span> <span data-v-6cbeab0a><i class="iconfont reco-copyright" data-v-6cbeab0a></i> <a data-v-6cbeab0a><span data-v-6cbeab0a>blog</span>
+            
+          <span data-v-6cbeab0a>2019 - </span>
+          2020
+        </a></span></div></div> <div data-v-4698c43e><main class="page"><!----> <div class="page-title" style="display:none;"><h1>数据结构与算法</h1> <hr> <div data-v-484a899e><i class="iconfont reco-account" data-v-484a899e><span data-v-484a899e>blog</span></i> <!----> <!----> <!----></div></div> <div class="theme-reco-content content__default" style="display:none;"><h1 id="数据结构与算法"><a href="#数据结构与算法" class="header-anchor">#</a> 数据结构与算法</h1> <h3 id="稀疏算法与二维数组的相互转换"><a href="#稀疏算法与二维数组的相互转换" class="header-anchor">#</a> 稀疏算法与二维数组的相互转换</h3> <p>包含写文件，读文件</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>package com.rxt.datastructrues.sparseArr;
+
+import java.io.*;
+import java.nio.Buffer;
+
+/**
+ * @author Ruan.X.T.
+ * @create 2020-02-11-5:27
+ */
+public class sparseArrDemo {
+    public static void main(String[] args) {
+        int[][] arr = new int[11][11];
+        arr[2][3] = 1;
+        arr[3][2] = 2;
+        System.out.println(&quot;----------------二维数组转化为稀疏数组--------------------------&quot;);
+        int[][] sarr = toSparseArray(arr);
+        for (int i = 0; i &lt; sarr.length; i++) {
+            for (int j = 0; j &lt; sarr[i].length; j++) {
+                System.out.print(sarr[i][j]+&quot; &quot;);
+            }
+            System.out.println();
+        }
+        System.out.println(&quot;-------------稀疏数组转化为二维数组---------------------&quot;);
+        int[][] tarr = toTwoDArray(sarr);
+        for (int i = 0; i &lt; tarr.length; i++) {
+            for (int j = 0; j &lt; tarr[i].length; j++) {
+                System.out.print(tarr[i][j]+&quot; &quot;);
+            }
+            System.out.println();
+        }
+        System.out.println(&quot;---------------存入磁盘-------------------&quot;);
+        FileWriter fileWriter=null;
+        try {
+            fileWriter = new FileWriter(new File(&quot;./meta.data&quot;));
+            for (int i = 0; i &lt; sarr.length; i++) {
+                for (int j = 0; j &lt; sarr[i].length; j++) {
+                    fileWriter.write(sarr[i][j]+&quot;\t&quot;);
+                }
+                fileWriter.write(&quot;\r\n&quot;);
+            }
+            fileWriter.flush();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }finally {
+            if (fileWriter!=null){
+                try {
+                    fileWriter.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        System.out.println(&quot;---------------从磁盘取出---------------------&quot;);
+        FileReader fr = null;
+        BufferedReader br = null;
+        try {
+             fr = new FileReader(new File(&quot;./meta.data&quot;));
+             br = new BufferedReader(fr);
+            StringBuffer sb=new StringBuffer();
+            String str;
+            int count=0;
+             while ( (str=br.readLine())!=null){
+                 count++;
+                 sb.append(str);
+                 sb.append(&quot;\r\n&quot;);
+             }
+             str = sb.toString();
+            String[] split = str.split(&quot;\\r\\n&quot;);
+            int[][] readArr = new int[split.length][3];
+            for (int i = 0; i &lt; readArr.length; i++) {
+                String[] split1 = split[i].split(&quot;\\t&quot;);
+                readArr[i][0] = Integer.parseInt(split1[0]);
+                readArr[i][1] = Integer.parseInt(split1[1]);
+                readArr[i][2] = Integer.parseInt(split1[2]);
+            }
+            for (int i = 0; i &lt; readArr.length; i++) {
+                for (int j = 0; j &lt; readArr[i].length; j++) {
+                    System.out.print(readArr[i][j]+&quot; &quot;);
+                }
+                System.out.println();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }finally {
+            if (br!=null){
+                try {
+                    br.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (fr!=null){
+                try {
+                    fr.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+
+    /**
+     * 转化为稀疏数组
+     * @param arr
+     * @return
+     */
+    public static int[][] toSparseArray(int[][] arr){
+        if (arr==null) return null;
+        int count = 0;
+        for (int i = 0; i &lt; arr.length; i++) {
+            for (int j = 0; j &lt; arr[i].length; j++) {
+                if (arr[i][j]!=0){
+                    count++;
+                }
+            }
+        }
+        int[][] sarr = new int[count+1][3];
+        sarr[0][0] = arr.length;
+        sarr[0][1] = arr[0].length;
+        sarr[0][2] = count;
+        int si = 1;
+        for (int i = 0; i &lt; arr.length; i++) {
+            for (int j = 0; j &lt; arr[i].length; j++) {
+                if (arr[i][j]!=0){
+                    sarr[si][0]=i;
+                    sarr[si][1]=j;
+                    sarr[si][2]=arr[i][j];
+                    si++;
+                }
+            }
+        }
+        return sarr;
+    }
+    /**
+     * 转化为二维
+     * @param arr
+     * @return
+     */
+    public static int[][] toTwoDArray(int[][] arr){
+        if (arr==null) return null;
+        int ti = arr[0][0];
+        int tj = arr[0][1];
+        int count = arr[0][2];
+        int tarr[][] = new int[ti][tj];
+        int si = 1;
+        for (int i=1;i&lt;arr.length;i++){
+            int row = arr[i][0];
+            int col = arr[i][1];
+            int val = arr[i][2];
+            tarr[row][col]=val;
+        }
+        return tarr;
+
+
+    }
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br></div></div><p><img src="C:%5CUsers%5CRXT-2020%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200211065452087.png" alt="image-20200211065452087"></p> <h3 id="数组环形队列"><a href="#数组环形队列" class="header-anchor">#</a> 数组环形队列</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>package com.rxt.data_structrues.queue;
+
+/**
+ * @author Ruan.X.T.
+ * @create 2020-02-12-3:28
+ */
+public class QueueArrDemo {
+    public static void main(String[] args) {
+        QueueArr queue = new QueueArr(2);
+        queue.addQueue(1);
+        queue.addQueue(2);
+        queue.addQueue(5);
+        queue.addQueue(6);
+        System.out.println(queue.getQueue());
+        queue.addQueue(3);
+        queue.addQueue(4);
+        System.out.println(queue.getQueue());
+        System.out.println(queue.getQueue());
+        System.out.println(queue.getQueue());
+        // 1 2 3
+    }
+}
+class QueueArr{
+    private int maxSize;
+    private int front;
+    private int rear;
+    private int[] arr;
+    public QueueArr(int maxSize) {
+        this.maxSize = maxSize;
+        front = -1;
+        rear = -1;
+        arr = new int[maxSize];
+    }
+
+    public boolean isFull(){
+        if ((rear+1)%maxSize == front) return true;
+        return false;
+    }
+
+    public boolean isEmpty(){
+        if (front==-1 &amp;&amp; rear == -1){
+            return true;
+        }
+        return false;
+    }
+
+    public void addQueue(int data){
+        if (isFull()){
+            System.out.println(&quot;队列空间已满&quot;);
+        }else {
+            if (front==-1){
+                front = 0;
+            }
+            if (rear==maxSize-1){
+                rear = 0;
+            }else {
+                int crear = rear ;
+                crear++;
+                if (rear!=-1 &amp;&amp; crear%maxSize==front){
+                    System.out.println(&quot;队列空间已满&quot;);
+                    return;
+                }else {
+                    rear++;
+                }
+            }
+            arr[rear] = data;
+        }
+    }
+
+    public int getQueue(){
+        if (isEmpty()){
+            return -1;
+        }
+        else if (front==rear){
+            int pop =  arr[front];
+            front=-1;
+            rear=-1;
+            arr = new int[maxSize];
+            return pop;
+        }
+        else {
+            int pop =  arr[front];
+            front = ++front%maxSize;
+            return pop;
+        }
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br></div></div><h3 id="单链表的增删改查操作"><a href="#单链表的增删改查操作" class="header-anchor">#</a> 单链表的增删改查操作</h3> <p>单链表实现英雄的添加、删除、修改、遍历</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>package com.rxt.data_structrues.linkedlist;
+
+/**
+ * @author Ruan.X.T.
+ * @create 2020-02-12-5:33
+ */
+public class SingleLinedListDemo1 {
+    public static void main(String[] args) {
+        HeroNode node1 = new HeroNode(1, &quot;宋江&quot;);
+        HeroNode node2 = new HeroNode(2, &quot;武松&quot;);
+        HeroNode node3 = new HeroNode(3, &quot;林冲&quot;);
+        HeroNode node4 = new HeroNode(4, &quot;鲁智深&quot;);
+        SingleLinkedList linkedList = new SingleLinkedList();
+        linkedList.addHero(node1);
+        linkedList.addHero(node2);
+        linkedList.addHero(node3);
+        linkedList.addHero(node4);
+        linkedList.list();
+    }
+}
+class SingleLinkedList{
+    private HeroNode head = new HeroNode(-1,&quot;&quot;);
+	
+	//添加到链表的最后
+    public void addHero(HeroNode heroNode){
+        if (heroNode==null){
+            throw new NullPointerException(&quot;英雄不能为空&quot;);
+        }
+        HeroNode temp = head;
+        while (true){
+            if (temp.next==null){
+                break;
+            }
+            temp = temp.next;
+        }
+        temp.next = heroNode;
+    }
+
+    public void list(){
+        HeroNode temp = head.next;
+        if (temp==null){
+            System.out.println(&quot;链表为空&quot;);
+            return;
+        }
+        while (true){
+            if (temp==null){
+                break;
+            }
+            System.out.println(temp);
+            temp = temp.next;
+        }
+    }
+}
+class HeroNode{
+    private int id;
+    private String name;
+    public HeroNode next;
+
+    public HeroNode(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return &quot;HeroNode{&quot; +
+                &quot;id=&quot; + id +
+                &quot;, name='&quot; + name + '\'' +
+                '}';
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>//按编号添加
+public void addHero(HeroNode heroNode){
+        int id = heroNode.id;
+        boolean flag = true;
+        if (heroNode==null){
+            throw new NullPointerException(&quot;英雄不能为空&quot;);
+        }
+        HeroNode temp = head;
+        if (head.next == null){
+            head.next = heroNode;
+        }else {
+            HeroNode temp1 = temp;
+           // HeroNode temp2 = head.next;
+            while (true){
+                if (temp1.next == null){
+                    break;
+                }
+                if (temp1.next.id&gt;id){
+                    break;
+                }else if ( temp1.next.id==id){
+                    flag =false;
+                    System.out.printf(&quot;添加的编号%d已存在，添加失败\r\n&quot;,id);
+                    break;
+                }
+                temp1 = temp1.next;
+//                temp2 = temp2.next;
+            }
+            if (flag){
+                heroNode.next = temp1.next;
+                temp1.next = heroNode;
+            }
+        }
+    }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>//根据影响id修改英雄信息
+public void update(HeroNode heroNode){
+        if (heroNode==null){
+            System.out.println(&quot;修改的hero 没有信息&quot;);
+            return;
+        }
+        HeroNode temp = head;
+        while (true){
+            if (temp.next==null){
+                System.out.println(&quot;没有找到要修改的编号&quot;);
+                break;
+            }
+            if (temp.id == heroNode.id){
+                break;
+            }
+            temp = temp.next;
+        }
+        temp.name = heroNode.name;
+    }
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>//删除操作
+public void delHero(int id){
+        HeroNode temp = head;
+        while (true){
+            if (temp.next == null){
+                System.out.println(&quot;没有找到要删除的英雄&quot;);
+                break;
+            }
+            if (temp.next.id == id){
+                break;
+            }
+            temp = temp.next;
+        }
+        if (temp.next.next==null){
+            temp.next = null;
+        }else {
+            temp.next = temp.next.next;
+        }
+    }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><h4 id="_1-获取链表个数"><a href="#_1-获取链表个数" class="header-anchor">#</a> 1.获取链表个数</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code> public int getCount() {
+        int count = 0;
+        HeroNode temp = head;
+        while (true) {
+            if (temp.next == null) {
+                break;
+            }
+            count++;
+            temp = temp.next;
+        }
+        return count;
+    }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h4 id="_2-新浪面试题"><a href="#_2-新浪面试题" class="header-anchor">#</a> 2.新浪面试题</h4> <p>查找单链表中的倒数第k个结点</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>先求出链表总共个数 
+在求出所求结点的index
+index = size - count +1 
+
+public HeroNode getReverseIndexNode(int n) {
+	HeroNode temp = head;
+    int count = getCount();
+    int num = count - n + 1;
+    for (int i = 0; i &lt; num; i++) {
+    temp = temp.next;
+    }
+    return temp;
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h4 id="_3-单链表的反转（腾讯面试）"><a href="#_3-单链表的反转（腾讯面试）" class="header-anchor">#</a> 3.单链表的反转（腾讯面试）</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>方法1：使用一个next 记录原本的next 
+      一个新的链表 即可
+public SingleLinkedListSort getReverseSingleLinkedList2() {
+        HeroNode temp = head.next;
+        SingleLinkedListSort linkedList = new SingleLinkedListSort();
+        HeroNode rtemp;
+        HeroNode rhead = linkedList.head;
+        HeroNode next = new HeroNode(-1,&quot;&quot;);
+        while (temp!=null){
+            if (temp.next!=null){
+                next = temp.next;
+            }else {
+                next = null;
+            }
+            HeroNode temp1 = rhead.next;
+            rhead.next = temp;
+            temp.next = null;
+            temp.next = temp1;
+            head.next = next;
+            temp = next;
+        }
+        return linkedList;
+    }
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>方法2：两个for循环
+遍历将链表存进新链表
+public SingleLinkedListSort getReverseSingleLinkedList() {
+        SingleLinkedListSort linkedList = new SingleLinkedListSort();
+        int count = getCount();
+        for (int i = 0; i &lt; count; i++) {
+            HeroNode temp = head.next;
+            for (int j = 0; j &lt; count - i; j++) {
+                if (j == count - i - 1) {
+                    HeroNode temp1 = new HeroNode(temp.id,temp.name);
+                    linkedList.addHeroNormal(temp1);
+                    break;
+                }
+                temp = temp.next;
+            }
+        }
+        return linkedList;
+    }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><h4 id="_4-逆打印链表（百度面试）"><a href="#_4-逆打印链表（百度面试）" class="header-anchor">#</a> 4.逆打印链表（百度面试）</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>方法1：
+嵌套for
+public void reverseList(){
+        int count = getCount();
+        for (int i = 0; i &lt; count; i++) {
+            HeroNode temp = head.next;
+            for (int j = 0; j &lt; count - i ; j++) {
+                if (j==count-i-1){
+                    System.out.println(temp);
+                }
+                temp = temp.next;
+            }
+        }
+    }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>方法2：栈
+public void reverseList2(){
+        Stack&lt;HeroNode&gt; stack = new Stack&lt;&gt;();
+        HeroNode temp = head.next;
+        while (true){
+            if (temp==null){
+                break;
+            }
+            stack.push(temp);
+            temp = temp.next;
+        }
+        while (!stack.empty()){
+            System.out.println(stack.pop());
+        }
+    }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h4 id="_5-单链表的合并"><a href="#_5-单链表的合并" class="header-anchor">#</a> 5.单链表的合并</h4> <p>合并两个有序的单链表，合并之后的链表依然有序</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>原本的添加方法 + 遍历后一个链表加入先前链表即可
+public void addHero(HeroNode heroNode) {
+        int id = heroNode.id;
+        boolean flag = true;
+        if (heroNode == null) {
+            throw new NullPointerException(&quot;英雄不能为空&quot;);
+        }
+        HeroNode temp = head;
+        if (head.next == null) {
+            head.next = heroNode;
+        } else {
+            HeroNode temp1 = temp;
+            // HeroNode temp2 = head.next;
+            while (true) {
+                if (temp1.next == null) {
+                    break;
+                }
+                if (temp1.next.id &gt; id) {
+                    break;
+                } else if (temp1.next.id == id) {
+                    flag = false;
+                    System.out.printf(&quot;添加的编号%d已存在，添加失败\r\n&quot;, id);
+                    break;
+                }
+                temp1 = temp1.next;
+//                temp2 = temp2.next;
+            }
+            if (flag) {
+                heroNode.next = temp1.next;
+                temp1.next = heroNode;
+            }
+        }
+    }
+public void unionLinkedList(SingleLinkedListSort list2){
+        HeroNode temp = list2.head.next;
+        while (true){
+            if (temp == null){
+                break;
+            }
+            addHero(temp);
+            temp = temp.next;
+        }
+    }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br></div></div><h3 id="双链表的增删改查"><a href="#双链表的增删改查" class="header-anchor">#</a> 双链表的增删改查</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>package com.rxt.data_structrues.linkedlist;
+
+/**
+ * @author Ruan.X.T.
+ * @create 2020-02-13-15:58
+ */
+public class DoubleLinkListDemo {
+    public static void main(String[] args) {
+        DoubleLinkList linkList = new DoubleLinkList();
+        HeroDoubleNode node1 = new HeroDoubleNode(1, &quot;宋江&quot;);
+        HeroDoubleNode node2 = new HeroDoubleNode(2, &quot;武松&quot;);
+        HeroDoubleNode node3 = new HeroDoubleNode(3, &quot;林冲&quot;);
+        HeroDoubleNode node4 = new HeroDoubleNode(4, &quot;鲁智深&quot;);
+        linkList.addHeroOrderById(node1);
+        linkList.addHeroOrderById(node2);
+        linkList.addHeroOrderById(node3);
+        linkList.addHeroOrderById(node4);
+//        linkList.list();
+//        linkList.delHero(4);
+//        linkList.list();
+        HeroDoubleNode node5 = new HeroDoubleNode(4, &quot;时迁&quot;);
+        linkList.update(node5);
+        linkList.list();
+    }
+}
+class DoubleLinkList{
+    HeroDoubleNode head = new HeroDoubleNode(-1,&quot;&quot;);
+
+    public void addItem(HeroDoubleNode item){
+        if (item==null){
+            System.out.println(&quot;添加的英雄不能为空&quot;);
+        } else {
+            HeroDoubleNode temp = head;
+            while (true){
+                if (temp.next == null){
+                    break;
+                }
+                temp = temp.next;
+            }
+            temp.next = item;
+            item.pre = temp;
+
+        }
+    }
+    public void addHeroOrderById(HeroDoubleNode heroNode){
+        if (heroNode==null){
+            throw new NullPointerException(&quot;英雄不能为空&quot;);
+        }
+        HeroDoubleNode temp = head;
+        while (true){
+            if (temp.next==null){
+                temp.next=heroNode;
+                heroNode.pre=temp;
+                break;
+            }
+            if (temp.next.id&gt;heroNode.id){
+                temp.next.pre = heroNode;
+                temp.next = heroNode;
+                break;
+            }
+            temp = temp.next;
+        }
+    }
+    public void list(){
+        if (this==null){
+            System.out.println(&quot;非法调用&quot;);
+        }
+        HeroDoubleNode temp = head.next;
+        while (temp!=null){
+            System.out.println(temp);
+            temp = temp.next;
+        }
+    }
+
+    public void delHero(int id){
+        HeroDoubleNode temp = head.next;
+        boolean flag = false;
+        while (true){
+            if (temp==null){
+                break;
+            }
+            else if (temp.id==id){
+                flag = true;
+                break;
+            }
+            temp = temp.next;
+        }
+        if (flag){
+            if (temp.next!=null){
+                temp.pre.next = temp.next;
+                temp.next.pre = temp.pre;
+                System.out.println(&quot;删除成功&quot;+temp.id);
+            }else {
+                temp.pre.next=null;
+                System.out.println(&quot;删除成功&quot;+temp.id+&quot;号&quot;+temp.name);
+            }
+
+        }else {
+            System.out.println(&quot;没找到&quot;);
+        }
+    }
+
+    public void update(HeroDoubleNode item){
+        HeroDoubleNode temp = head.next;
+        while (true){
+            if (temp==null){
+                break;
+            }
+            if (temp.id == item.id){
+                temp.name = item.name;
+                System.out.println(&quot;修改成功&quot;);
+                break;
+            }
+            temp = temp.next;
+        }
+    }
+}
+class HeroDoubleNode{
+     int id;
+     String name;
+     HeroDoubleNode pre;
+     HeroDoubleNode next;
+
+    public HeroDoubleNode(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return &quot;HeroDoubleNode{&quot; +
+                &quot;id=&quot; + id +
+                &quot;, name='&quot; + name + '\'' +
+                '}';
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br></div></div><h3 id="josephu（约瑟夫）问题"><a href="#josephu（约瑟夫）问题" class="header-anchor">#</a> Josephu（约瑟夫）问题</h3> <p><img src="C:%5CUsers%5CRXT-2020%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200213170402117.png" alt="image-20200213170402117"></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>package com.rxt.data_structrues.linkedlist;
+
+import java.util.Arrays;
+
+/**
+ * @author Ruan.X.T.
+ * @create 2020-02-13-17:14
+ */
+public class JosephuProblem {
+    public static void main(String[] args) {
+        CircleLinkList linkList = new CircleLinkList();
+        Child a = new Child(1);
+        Child b = new Child(2);
+        Child c = new Child(3);
+        Child d = new Child(4);
+        Child e = new Child(5);
+        Child f = new Child(6);
+
+
+        linkList.addChild(a);
+        linkList.addChild(b);
+        linkList.addChild(c);
+        linkList.addChild(d);
+        linkList.addChild(e);
+
+        linkList.popChild(1,2);
+    }
+}
+class CircleLinkList{
+    private Child head=new Child(-1);
+    int size = 0;
+    public CircleLinkList() {
+
+    }
+    public void addChild(Child child){
+        Child temp = head;
+        if (size==0){
+            head = child;
+        }
+        while (true){
+            if (temp.next==head || temp.next == null){
+                child.next = head;
+                temp.next=child;
+                size++;
+                System.out.println(&quot;人数到达&quot;+&quot;:&quot;+size);
+                break;
+            }
+            temp = temp.next;
+        }
+    }
+    public void popChild(int k,int m){
+        if (this.size&lt;=1){
+            System.out.println(&quot;人数不足，玩蛇皮呢&quot;);
+            return;
+        }
+        Child temp = head;
+        Child temp1 = head;
+        for (int i = 0; i &lt; k-1; i++) {
+            temp = temp.next;
+        }
+
+        int[] pop = new int[size];
+        int count = 1;
+        int index=0;
+        while (true){
+            if (temp.next==temp){
+                pop[size-1] = temp.id;
+                break;
+            }else {
+                if (count == m){
+                    pop[index++] = temp.id;
+                    temp1.next = temp.next;
+                    temp = temp1.next;
+                    count = 1;
+                }else {
+                    count++;
+                    temp1 = temp;
+                    temp = temp.next;
+                }
+            }
+        }
+
+        System.out.println(Arrays.toString(pop));
+
+    }
+}
+class Child{
+    int id;
+    Child next;
+
+    public Child(int id) {
+        this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        return &quot;Child{&quot; +
+                &quot;id=&quot; + id +
+                '}';
+    }
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br></div></div><h3 id="栈（stack）"><a href="#栈（stack）" class="header-anchor">#</a> 栈（Stack）</h3> <h5 id="数组模拟栈"><a href="#数组模拟栈" class="header-anchor">#</a> 数组模拟栈</h5> <div class="language- line-numbers-mode"><pre class="language-text"><code>package com.rxt.data_structrues.stack;
+
+/**
+ * @author Ruan.X.T.
+ * @create 2020-02-16-19:04
+ */
+public class StackDemo {
+    public static void main(String[] args) {
+        StackArray stackArray = new StackArray(10);
+        stackArray.push(1);
+        stackArray.push(2);
+        stackArray.push(3);
+        stackArray.push(4);
+        int i=0;
+        while(i!=-1){
+            i=stackArray.pop();
+            System.out.println(i);
+        }
+    }
+}
+class StackArray{
+    int[] arr;
+    int top = -1;
+    int maxSize;
+
+    public StackArray(int maxSize) {
+        this.maxSize = maxSize;
+        arr = new int[maxSize];
+    }
+
+    public void push(int n){
+        if (top==maxSize-1){
+            System.out.println(&quot;栈已满&quot;);
+            return;
+        }
+        arr[++top] = n;
+    }
+
+    public int pop(){
+        if (top==-1){
+            System.out.println(&quot;栈为空&quot;);
+            return -1;
+        }
+        return arr[top--];
+    }
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br></div></div><h5 id="单链表模拟栈"><a href="#单链表模拟栈" class="header-anchor">#</a> 单链表模拟栈</h5> <div class="language- line-numbers-mode"><pre class="language-text"><code>package com.rxt.data_structrues.stack;
+
+import java.util.LinkedList;
+
+/**
+ * @author Ruan.X.T.
+ * @create 2020-02-16-19:04
+ */
+public class StackDemo {
+    public static void main(String[] args) {
+//        StackArray stackArray = new StackArray(10);
+//        stackArray.push(1);
+//        stackArray.push(2);
+//        stackArray.push(3);
+//        stackArray.push(4);
+//        int i=0;
+//        while(i!=-1){
+//            i=stackArray.pop();
+//            System.out.println(i);
+
+        LinkedStack linkedList = new LinkedStack();
+        linkedList.push(1);
+        linkedList.push(2);
+        linkedList.push(3);
+        linkedList.push(4);
+        for (int i = 0; i &lt; 4; i++) {
+            System.out.println(linkedList.pop());
+        }
+
+
+    }
+}
+class StackArray{
+    int[] arr;
+    int top = -1;
+    int maxSize;
+
+    public StackArray(int maxSize) {
+        this.maxSize = maxSize;
+        arr = new int[maxSize];
+    }
+
+    public void push(int n){
+        if (top==maxSize-1){
+            System.out.println(&quot;栈已满&quot;);
+            return;
+        }
+        arr[++top] = n;
+    }
+
+    public int pop(){
+        if (top==-1){
+            System.out.println(&quot;栈为空&quot;);
+            return -1;
+        }
+        return arr[top--];
+    }
+}
+class StackLinkedList{
+    int num;
+    StackLinkedList next;
+
+    public StackLinkedList() {
+    }
+
+    public StackLinkedList(int num) {
+        this.num = num;
+    }
+
+    @Override
+    public String toString() {
+        return &quot;StackLinkedList{&quot; +
+                &quot;num=&quot; + num +
+                &quot;, next=&quot; + next +
+                '}';
+    }
+}
+class LinkedStack{
+    StackLinkedList head = new StackLinkedList();
+
+    public void push(int num){
+        StackLinkedList temp = head;
+        while (true){
+            if (temp.next==null){
+                break;
+            }
+            temp = temp.next;
+        }
+        temp.next = new StackLinkedList(num);
+    }
+
+    public int pop(){
+        if (head.next==null)
+        {
+            System.out.println(&quot;栈为空&quot;);
+            return -1;
+        }
+        else {
+            StackLinkedList temp = head;
+            StackLinkedList temp1 = temp;
+            while (true){
+                if (temp.next==null){
+                    break;
+                }
+                temp1 = temp;
+                temp = temp.next;
+            }
+             temp1.next=null;
+             return temp.num;
+        }
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br></div></div><h5 id="中缀表达式的计算"><a href="#中缀表达式的计算" class="header-anchor">#</a> 中缀表达式的计算</h5> <ul><li>扫描表达式遇到数字入栈数字栈</li> <li>扫描到运算符，若符号栈为空则直接入栈。若此运算符的优先级小于等于栈顶运算符，则pop出两个数字，pop出栈顶运算符 计算出 得数将其入数字栈，然后将该运算符入符号栈</li> <li>最后按顺序，从符号栈pop一个，就从数字栈pop两个进行计算，最后符号栈为空，数字栈只剩一个就是最终得数</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>package com.rxt.data_structrues.stack;
+
+import java.util.Scanner;
+import java.util.Stack;
+
+/**
+ * @author Ruan.X.T.
+ * @create 2020-02-16-20:59
+ */
+public class operStack {
+    public static Stack stack1 = new Stack();
+    public static Stack stack2 = new Stack();
+    public static Stack stack3 = new Stack();
+    public static Stack stack4 = new Stack();
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String strs[] = new String[20];
+        int index=0;
+        while (scan.hasNext()){
+            String s = scan.next();
+            if (s.equals(&quot;EOF&quot;)){
+                break;
+            }
+            strs[index++] = s;
+
+        }
+        for (int i = 0; i &lt; index ; i++) {
+            if (isOper(strs[i])){
+                boolean flag=false;
+                String peek=&quot;&quot;;
+                if (!stack2.empty()){
+                    peek= String.valueOf(stack2.peek());
+                }
+                if (stack2.empty()||priority(peek)&gt;priority(strs[i])){
+                    stack2.push(strs[i]);
+                }else {
+                    String pop = String.valueOf(stack2.pop());
+                    String p1 = String.valueOf(stack1.pop());
+                    String p2 = String.valueOf(stack1.pop());
+                    int pop1 =Integer.parseInt(p1);
+                    int pop2 =Integer.parseInt(p2);
+                    calculation(pop1,pop2,pop);
+                    stack2.push(strs[i]);
+                }
+            }else {
+                stack1.push(strs[i]);
+            }
+
+        }
+        finalCalcu();
+
+        System.out.println(stack1.pop());
+    }
+    public static void calculation(int pop1, int pop2, String pop){
+        switch (pop){
+            case &quot;+&quot; :
+                stack1.push(pop2+pop1);
+                break;
+            case &quot;-&quot;:
+                stack1.push(pop2-pop1);
+                break;
+            case &quot;*&quot;:
+                stack1.push(pop2*pop1);
+                break;
+            case &quot;/&quot;:
+                stack1.push(pop2/pop1);
+                break;
+        }
+    }
+    public static boolean isOper(String ch){
+        if (ch.equals(&quot;+&quot;)||ch.equals(&quot;-&quot;)||ch.equals(&quot;*&quot;)||ch.equals(&quot;/&quot;)){
+            return true;
+        }
+        return false;
+    }
+    public static int priority(String ch){
+        if (ch.equals(&quot;*&quot;)||ch.equals(&quot;/&quot;)){
+            return 2;
+        }else if (ch.equals(&quot;+&quot;)||ch.equals(&quot;-&quot;)){
+            return 3;
+        }else if (ch.equals(&quot;(&quot;)||ch.equals(&quot;)&quot;)){
+            return 1;
+        }else {
+            return -1;
+        }
+    }
+    public static void finalCalcu(){
+        while (true){
+            if (!stack2.empty()){
+                String pop = String.valueOf(stack2.pop());
+                String p1 = String.valueOf(stack1.pop());
+                String p2 = String.valueOf(stack1.pop());
+                int pop1 =Integer.parseInt(p1);
+                int pop2 =Integer.parseInt(p2);
+                calculation(pop1,pop2,pop);
+            }else {
+                break;
+            }
+        }
+    }
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br></div></div><h5 id="中缀转后缀表达式"><a href="#中缀转后缀表达式" class="header-anchor">#</a> 中缀转后缀表达式</h5> <p><img src="C:%5CUsers%5CRXT-2020%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200218034216507.png" alt="image-20200218034216507"></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>package com.rxt.data_structrues.stack;
+
+import sun.security.provider.Sun;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Stack;
+
+/**
+ * @author Ruan.X.T.
+ * @create 2020-02-18-3:42
+ */
+public class suffixStack {
+    public static void main(String[] args) {
+        String s=&quot;1 + ( ( 2 + 3 ) * 4 ) - 5&quot;;
+        String[] strs = s.split(&quot; &quot;);
+        List list = infixToSuffix(strs);
+        for(Object str:list){
+            System.out.print(String.valueOf(str)+&quot; &quot;);
+        }
+        System.out.println(&quot;----------后缀表达式的计算--------------&quot;);
+        int sum = calculate(list);
+        System.out.println(sum);
+    }
+    public static List infixToSuffix(String[] strs){
+        Stack stack1 = new Stack();
+        Stack stack2 = new Stack();
+        List list = new ArrayList();
+        for (String str:strs){
+            if (str.matches(&quot;\\d+&quot;)){
+                stack2.push(str);
+            }else {
+                if (stack1.empty()){
+                    stack1.push(str);
+                }else {
+                    if (str.equals(&quot;(&quot;)){
+                        stack1.push(str);
+                    }else if (str.equals(&quot;)&quot;)){
+                        while (true){
+                            if (!stack1.peek().equals(&quot;(&quot;)){
+                                stack2.push(stack1.pop());
+                            }else {
+                                stack1.pop();
+                                break;
+                            }
+                        }
+                    }else{
+                        while (true){
+                            if (stack1.empty()){
+                                break;
+                            }else {
+                                if (stack1.peek().equals(&quot;(&quot;)){
+                                    break;
+                                } else if (priority(str)&lt;=priority(String.valueOf(stack1.peek()))){
+                                    stack2.push(stack1.pop());
+                                }else {
+                                    break;
+                                }
+                            }
+                        }
+                        stack1.push(str);
+
+                    }
+                }
+            }
+        }
+        while (!stack1.empty()){
+            stack2.push(stack1.pop());
+        }
+        while (!stack2.empty()){
+            stack1.push(stack2.pop());
+        }
+        while (!stack1.empty()){
+            list.add(String.valueOf(stack1.pop()));
+        }
+        return list;
+    }
+    public static int priority(String oper){
+        if (oper.equals(&quot;+&quot;)||oper.equals(&quot;-&quot;)){
+            return 3;
+        }else if (oper.equals(&quot;*&quot;)||oper.equals(&quot;/&quot;)){
+            return 2;
+        }else {
+            throw new RuntimeException(&quot;非运算符&quot;);
+        }
+    }
+    public static int calculate(List list){
+        Stack stack1=new Stack();
+        Stack stack2=new Stack();
+        int sum=0;
+        for (Object obj:list){
+            String s = String.valueOf(obj);
+            if (s.matches(&quot;\\d+&quot;)){
+                stack1.push(s);
+            }else {
+                int i = Integer.parseInt(String.valueOf(stack1.pop()));
+                int j = Integer.parseInt(String.valueOf(stack1.pop()));
+                calculation(stack1,i,j,s);
+            }
+        }
+        sum = (int) stack1.pop();
+        return sum;
+    }
+    public static void calculation(Stack stack1,int pop1, int pop2, String pop){
+        switch (pop){
+            case &quot;+&quot; :
+                stack1.push(pop2+pop1);
+                break;
+            case &quot;-&quot;:
+                stack1.push(pop2-pop1);
+                break;
+            case &quot;*&quot;:
+                stack1.push(pop2*pop1);
+                break;
+            case &quot;/&quot;:
+                stack1.push(pop2/pop1);
+                break;
+        }
+    }
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br></div></div><h5 id="后缀表达式的计算"><a href="#后缀表达式的计算" class="header-anchor">#</a> 后缀表达式的计算</h5> <ul><li><p>扫描List 如果扫描到数字则将其入栈。如果扫描到运算符则pop栈中的两个数字，然后进行运算。然后再将其入栈。</p></li> <li><p>最后栈顶元素就是最终的计算结果</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>public static int calculate(List list){
+        Stack stack1=new Stack();
+        Stack stack2=new Stack();
+        int sum=0;
+        for (Object obj:list){
+            String s = String.valueOf(obj);
+            if (s.matches(&quot;\\d+&quot;)){
+                stack1.push(s);
+            }else {
+                int i = Integer.parseInt(String.valueOf(stack1.pop()));
+                int j = Integer.parseInt(String.valueOf(stack1.pop()));
+                calculation(stack1,i,j,s);
+            }
+        }
+        sum = (int) stack1.pop();
+        return sum;
+    }
+    public static void calculation(Stack stack1,int pop1, int pop2, String pop){
+        switch (pop){
+            case &quot;+&quot; :
+                stack1.push(pop2+pop1);
+                break;
+            case &quot;-&quot;:
+                stack1.push(pop2-pop1);
+                break;
+            case &quot;*&quot;:
+                stack1.push(pop2*pop1);
+                break;
+            case &quot;/&quot;:
+                stack1.push(pop2/pop1);
+                break;
+        }
+    }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br></div></div></li></ul> <h3 id="递归"><a href="#递归" class="header-anchor">#</a> 递归</h3> <p><img src="C:%5CUsers%5CRXT-2020%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200219040437553.png" alt="image-20200219040437553"></p> <p><strong>递归调用规则:</strong></p> <ul><li>当程序执行到一个方法时，就会开辟一个独立的空间（栈）；</li> <li>当最后开辟的栈结束调用则返回上一个方法继续执行。如此反复</li> <li>每个栈里的局部变量都是独立的</li></ul> <h4 id="迷宫问题-回溯"><a href="#迷宫问题-回溯" class="header-anchor">#</a> 迷宫问题(回溯)</h4> <p><img src="C:%5CUsers%5CRXT-2020%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200219041345054.png" alt="image-20200219041345054"></p> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token keyword">package</span> <span class="token namespace">com<span class="token punctuation">.</span>rxt<span class="token punctuation">.</span>data_structrues<span class="token punctuation">.</span>recursion</span><span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * @author Ruan.X.T.
+ * @create 2020-02-20-0:31
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Maze</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span> map <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token number">8</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">7</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">//设定墙为1 空白为0</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">8</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> <span class="token number">7</span><span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>i<span class="token operator">==</span><span class="token number">0</span> <span class="token operator">||</span> i<span class="token operator">==</span><span class="token number">7</span> <span class="token operator">||</span> j<span class="token operator">==</span><span class="token number">0</span> <span class="token operator">||</span> j<span class="token operator">==</span><span class="token number">6</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                    map<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>i<span class="token operator">==</span><span class="token number">3</span> <span class="token operator">&amp;&amp;</span> <span class="token punctuation">(</span>j<span class="token operator">==</span><span class="token number">1</span><span class="token operator">||</span>j<span class="token operator">==</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                    map<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        map<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
+        map<span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>
+        map<span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>
+        map<span class="token punctuation">[</span><span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>
+        map<span class="token punctuation">[</span><span class="token number">7</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>
+        map<span class="token punctuation">[</span><span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token keyword">boolean</span> path <span class="token operator">=</span> <span class="token function">getPath</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">8</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> <span class="token number">7</span><span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span>map<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">/**
+     * 设定 1 为墙 2为走过的路 3为走过不通的路 0为未走过的路
+     * @param i
+     * @param j
+     * @return
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">boolean</span> <span class="token function">getPath</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token punctuation">,</span> <span class="token keyword">int</span> j<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>map<span class="token punctuation">[</span><span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token operator">==</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>map<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                map<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">;</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">getPath</span><span class="token punctuation">(</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span>j<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                    <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">getPath</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span>j<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                    <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">getPath</span><span class="token punctuation">(</span>i<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span>j<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                    <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">getPath</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span>j<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                    <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token punctuation">{</span>
+                    map<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">=</span><span class="token number">3</span><span class="token punctuation">;</span>
+                    <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token punctuation">{</span>
+                <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br></div></div><h4 id="八皇后算法"><a href="#八皇后算法" class="header-anchor">#</a> 八皇后算法</h4> <p><img src="C:%5CUsers%5CRXT-2020%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200220015400704.png" alt="image-20200220015400704"></p> <p><img src="C:%5CUsers%5CRXT-2020%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200220015427067.png" alt="image-20200220015427067"></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>package com.rxt.data_structrues.recursion;
+
+/**
+ * @author Ruan.X.T.
+ * @create 2020-02-20-2:29
+ */
+public class Queen8 {
+    static int max=8;
+    static int[] arr = new int[max];
+    static int count=0;
+    public static void main(String[] args) {
+        check(0);
+        System.out.println(count);
+    }
+    public static void check(int n){
+        if (n==max){
+            printArr();
+            return;
+        }
+        for (int i = 0; i &lt; 8; i++) {
+            arr[n] = i;
+            if (judge(n)){
+                check(n+1);
+            }
+        }
+    }
+    public static boolean judge(int n){
+        for (int i = 0; i &lt; n; i++) {
+            if (arr[n]==arr[i] || Math.abs(n-i)==Math.abs(arr[n]-arr[i]))
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+    public static void printArr(){
+        count++;
+        for (int i = 0; i &lt; 8; i++) {
+            System.out.print(arr[i]+&quot; &quot;);
+        }
+        System.out.println();
+    }
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br></div></div><h2 id="排序算法"><a href="#排序算法" class="header-anchor">#</a> 排序算法</h2> <p><img src="C:%5CUsers%5CRXT-2020%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200222011302282.png" alt="image-20200222011302282"></p> <p>直接插入排序，希尔排序，堆排序，简单选择排序，冒泡排序，快速排序，归并排序，基数排序。</p> <h3 id="算法时间复杂度"><a href="#算法时间复杂度" class="header-anchor">#</a> 算法时间复杂度</h3> <p><img src="C:%5CUsers%5CRXT-2020%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200222013533375.png" alt="image-20200222013533375"></p> <h4 id="_1-常数阶"><a href="#_1-常数阶" class="header-anchor">#</a> 1.常数阶</h4> <p>无论代码执行了多少行，只要没有循环结构。</p> <p>就是O(1)。</p> <h4 id="_2-对数阶"><a href="#_2-对数阶" class="header-anchor">#</a> 2.对数阶</h4> <p><img src="C:%5CUsers%5CRXT-2020%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200222014610610.png" alt="image-20200222014610610"></p> <h4 id="_3-线性阶"><a href="#_3-线性阶" class="header-anchor">#</a> 3.线性阶</h4> <p><img src="C:%5CUsers%5CRXT-2020%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200222014928102.png" alt="image-20200222014928102"></p> <h4 id="_4-线性对数阶"><a href="#_4-线性对数阶" class="header-anchor">#</a> 4.线性对数阶</h4> <p><img src="C:%5CUsers%5CRXT-2020%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200222015219777.png" alt="image-20200222015219777"></p> <h4 id="_5-平方阶"><a href="#_5-平方阶" class="header-anchor">#</a> 5.平方阶</h4> <p><img src="C:%5CUsers%5CRXT-2020%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200222015345335.png" alt="image-20200222015345335"></p> <h4 id="_6-立方阶"><a href="#_6-立方阶" class="header-anchor">#</a> 6.立方阶</h4> <h4 id="_7-k方阶"><a href="#_7-k方阶" class="header-anchor">#</a> 7.K方阶</h4> <h4 id="_8-指数阶"><a href="#_8-指数阶" class="header-anchor">#</a> 8.指数阶</h4> <h3 id="冒泡排序及优化"><a href="#冒泡排序及优化" class="header-anchor">#</a> 冒泡排序及优化</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>package com.rxt.algorithm.sort;
+
+import java.util.Arrays;
+
+/**
+ * @author Ruan.X.T.
+ * @create 2020-02-23-2:02
+ */
+public class BubbleSort {
+    public static void main(String[] args) {
+        long start = System.currentTimeMillis();
+        int[] arr = {-1,5,3,17,20,1};
+        sort(arr);
+        System.out.println(Arrays.toString(arr));
+        long end = System.currentTimeMillis();
+        System.out.println(end-start);
+    }
+    public static void sort(int[] arr){
+        for (int i = 0; i &lt; arr.length-1; i++) {
+            boolean flag = true;
+            for (int j = 0; j &lt; arr.length-i-1; j++) {
+                if (arr[j]&gt;arr[j+1]){
+                    int temp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp;
+                    flag=false;
+                }
+            }
+            if (flag){
+                break;
+            }
+        }
+    }
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br></div></div><h3 id="选择排序"><a href="#选择排序" class="header-anchor">#</a> 选择排序</h3> <p><img src="C:%5CUsers%5CRXT-2020%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200223193138529.png" alt="image-20200223193138529"></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>package com.rxt.algorithm.sort;
+
+import java.util.Arrays;
+
+/**
+ * @author Ruan.X.T.
+ * @create 2020-02-23-12:57
+ */
+public class CheckSort {
+    public static void main(String[] args) {
+        int[] arr = {-1,1,0,35,17};
+        sort(arr);
+        System.out.println(Arrays.toString(arr));
+    }
+    public static void sort(int[] arr){
+        for (int i = 0; i &lt; arr.length; i++) {
+            int min = Integer.MAX_VALUE;
+            int index = 0;
+            for (int j = i; j &lt; arr.length; j++) {
+                if (min&gt;arr[j]){
+                    min = arr[j];
+                    index = j;
+                }
+            }
+            if (min!=arr[i]){
+                int temp = arr[i];
+                arr[i] = arr[index];
+                arr[index] = temp;
+            }
+
+        }
+    }
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br></div></div><h3 id="插入排序"><a href="#插入排序" class="header-anchor">#</a> 插入排序</h3> <p><img src="C:%5CUsers%5CRXT-2020%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200223193626856.png" alt="image-20200223193626856"></p> <div class="language- line-numbers-mode"><pre class="language-text"><code> // {7,1} 1    {7,7}  -&gt; {1,7}
+ // {1,7,3} 3  {1,7,7} -&gt; {1,3,7}
+ // {1,3,7,-1} {1,3,7,7} -&gt; {1,3,3,7} -&gt; -&gt; {1,1,3,7} 
+package com.rxt.algorithm.sort;
+
+import java.util.Arrays;
+
+/**
+ * @author Ruan.X.T.
+ * @create 2020-02-23-20:09
+ */
+public class InsertSort {
+    public static void main(String[] args) {
+        int[] arr = {7,1,3,2,9,-1};
+        // {7,1} 1    {7,7}  -&gt; {1,7}
+        // {1,7,3} 3  {1,7,7} -&gt; {1,3,7}
+        // {1,3,7,-1} {1,3,7,7} -&gt; {1,3,3,7} -&gt; -&gt; {1,1,3,7} -&gt;{-1,1,3,7}
+        System.out.println(Arrays.toString(arr));
+        insertSort(arr);
+//        System.out.println(Arrays.toString(arr));
+    }
+    public static void insertSort(int[] arr){
+        for (int i = 1; i &lt; arr.length; i++) {
+            int insertVal = arr[i];
+            int insertIndex = i-1;
+            while (insertIndex&gt;=0 &amp;&amp; insertVal&lt;arr[insertIndex]){
+                arr[insertIndex+1] = arr[insertIndex];
+                insertIndex--;
+            }
+            arr[insertIndex+1] = insertVal;
+            System.out.println(&quot;第&quot;+i+&quot;轮排序：&quot;+Arrays.toString(arr));
+        }
+    }
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br></div></div><h3 id="希尔排序"><a href="#希尔排序" class="header-anchor">#</a> 希尔排序</h3> <h4 id="希尔交换法"><a href="#希尔交换法" class="header-anchor">#</a> 希尔交换法</h4> <p><img src="C:%5CUsers%5CRXT-2020%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200224122010038.png" alt="image-20200224122010038"></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>package com.rxt.algorithm.sort;
+
+import java.util.Arrays;
+
+/**
+ * @author Ruan.X.T.
+ * @create 2020-02-24-12:21
+ */
+public class ShellSort {
+    public static void main(String[] args) {
+        int[] arr = {10,3,8,2,15,13,0,9,-20,1};
+        shellSort(arr,arr.length/2);
+        System.out.println(Arrays.toString(arr));
+    }
+    public static void shellSort(int[] arr,int group){
+        if (group==0){
+            return;
+        }
+        for (int i = group; i &lt; arr.length; i++) {
+            for (int j = i-group; j &gt;=0 ; j -= group) {
+                if (arr[j+group]&lt;arr[j]){
+                    int temp = arr[j];
+                    arr[j] = arr[j+group];
+                    arr[j+group] = temp;
+                }
+            }
+        }
+        shellSort(arr,group/2);
+
+    }
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br></div></div><h4 id="希尔移动法"><a href="#希尔移动法" class="header-anchor">#</a> 希尔移动法</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>public static void shellSort2(int[] arr,int group){
+        if (group==0){
+            return;
+        }
+        for (int i = group; i &lt; arr.length; i++) {
+            int j = i ;
+            int val = arr[i];
+            while (j-group&gt;=0 &amp;&amp; val&lt;arr[j-group]){
+                arr[j] = arr[j-group];
+                j-= group;
+            }
+            arr[j] = val;
+        }
+        shellSort2(arr,group/2);
+    }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h3 id="快速排序"><a href="#快速排序" class="header-anchor">#</a> 快速排序</h3> <p><img src="C:%5CUsers%5CRXT-2020%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200225135607516.png" alt="image-20200225135607516"></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>package com.rxt.algorithm.sort;
+
+import java.util.Arrays;
+
+/**
+ * @author Ruan.X.T.
+ * @create 2020-02-25-13:24
+ */
+public class QuickSort {
+    public static void main(String[] args) {
+        int[] arr = {3,2,1,0,0,5,7,8};
+        quickSort(arr,0,arr.length-1);
+        System.out.println(Arrays.toString(arr));
+    }
+    public static void quickSort(int[] arr,int left,int right){
+        if (left&gt;right){
+            return;
+        }
+        int i = left;
+        int j = right;
+        int pivot = arr[left];
+        int temp=0;
+        while (i&lt;j){
+        	//当j&gt;i 时才可以j--，i++
+            while (i&lt;j &amp;&amp; arr[j]&gt;pivot){
+                j--;
+            }
+            while (i&lt;j &amp;&amp; arr[i]&lt;=pivot){
+                i++;
+            }
+            temp = arr[j];
+            arr[j] = arr[i];
+            arr[i] = temp;
+        }
+        //最后将基数与i，j 的位置互相对调
+        temp = arr[left];
+        arr[left] = arr[i];
+        arr[i] = temp;
+        quickSort(arr,left,i-1);
+        quickSort(arr,i+1,right);
+    }
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br></div></div><h3 id="归并排序"><a href="#归并排序" class="header-anchor">#</a> 归并排序</h3> <p><img src="C:%5CUsers%5CRXT-2020%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1582662224918.png" alt="1582662224918"></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>//需要理解两个点。
+//分和并。
+//分的递归调用
+//并的while
+package com.rxt.algorithm.sort;
+
+import java.util.Arrays;
+
+/**
+ * @author Ruan.X.T.
+ * @create 2020-02-26-4:28
+ */
+public class MergeSort {
+    public static void main(String[] args) {
+        int[] arr = {-99,2,1,0,0,5,7,8};
+        //{0,2,1,0,3,5,7,8}
+        merge(arr,0,arr.length-1);
+        System.out.println(Arrays.toString(arr));
+    }
+    public static void merge(int[] arr,int left,int right){
+        if (left&gt;=right){
+            return;
+        }
+        int mid = (left+right)/2;
+        merge(arr,left,mid);
+        merge(arr,mid+1,right);
+        mergeSort(arr,left,right);
+    }
+    public static void mergeSort(int[] arr,int left,int right){
+        if (left&gt;=right){
+            return;
+        }
+        int mid = (left+right)/2;
+        int i = left;
+        int j = mid+1;
+        int[] temp = new int[right-left+1];
+        int index=0;
+        while (j&lt;=right &amp;&amp; i&lt;=mid){
+            temp[index++]=arr[i]&lt;arr[j]?arr[i++]:arr[j++];
+        }
+        while (i&lt;=mid){
+            temp[index++]=arr[i++];
+        }
+        while (j&lt;=right){
+            temp[index++]=arr[j++];
+        }
+        int m = 0;
+        for (int k = left; k &lt;=right; k++) {
+            arr[k] = temp[m++];
+        }
+
+        mergeSort(arr,left,mid);
+        mergeSort(arr,mid+1,right);
+    }
+}
+
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br></div></div><h3 id="基数排序"><a href="#基数排序" class="header-anchor">#</a> 基数排序</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>package com.rxt.algorithm.sort;
+
+import java.util.Arrays;
+
+/**
+ * @author Ruan.X.T.
+ * @create 2020-02-26-6:38
+ */
+public class RadixSort {
+    public static void main(String[] args) {
+        int[] arr = {5,20,213,789,132,456,231};
+        radixSort(arr);
+        System.out.println(Arrays.toString(arr));
+    }
+    public static void radixSort(int[] arr){
+        int[][] bucket = new int[10][arr.length];
+        int[] bucketElementCount = new int[10];
+        int max = arr[0];
+        for (int i = 1; i &lt; arr.length; i++) {
+            max=max&gt;arr[i]?max:arr[i];
+        }
+        int maxLength = (max+&quot;&quot;).length();
+        for (int i = 0; i &lt; maxLength; i++) {
+            for (int j = 0; j &lt; arr.length; j++) {
+                int temp = arr[j] / ((int)Math.pow(10,i) )% 10;
+                bucket[temp][bucketElementCount[temp]++] = arr[j];
+            }
+            int index = 0;
+            for (int j = 0; j &lt; bucketElementCount.length; j++) {
+                if (bucketElementCount[j]!=0){
+                    for (int k = 0; k &lt; bucketElementCount[j]; k++) {
+                        arr[index++] = bucket[j][k];
+                    }
+                    bucketElementCount[j] = 0;
+                }
+            }
+
+        }
+
+    }
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br></div></div><h3 id="排序算法的比较"><a href="#排序算法的比较" class="header-anchor">#</a> 排序算法的比较</h3> <p><img src="C:%5CUsers%5CRXT-2020%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1582673502515.png" alt="1582673502515"></p> <h3 id="所有排序算法的整合"><a href="#所有排序算法的整合" class="header-anchor">#</a> 所有排序算法的整合</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>package com.rxt.algorithm.sort.review;
+
+import java.util.Arrays;
+
+/**
+ * @author Ruan.X.T.
+ * @create 2020-02-27-11:42
+ */
+public class Review {
+    public static void main(String[] args) {
+        int[] arr = {100,5,20,99,98,97,123,45,1};
+        bubleSort(arr);
+        checkSort(arr);
+        insertSort(arr);
+        quickSort(arr,0,arr.length-1);
+        shellSort(arr,arr.length/2);
+        merge(arr,0,arr.length-1);
+        shellSort2(arr,arr.length/2);
+        radixSort(arr);
+        System.out.println(Arrays.toString(arr));
+    }
+
+    /**
+     * 基数排序
+     * @param arr
+     */
+    public static void radixSort(int[] arr){
+        int max = arr[0];
+        for (int i = 1; i &lt; arr.length; i++) {
+            if (arr[i]&gt;max){
+                max = arr[i];
+            }
+        }
+        int maxLength = (max+&quot;&quot;).length();
+        int[][] bucket = new int[10][arr.length];
+        int[] bucketElementCount = new int[10];
+        for (int i = 0; i &lt; maxLength; i++) {
+            for (int j = 0; j &lt; arr.length ; j++) {
+                int t = arr[j] / (int)Math.pow(10,i) % 10;
+                bucket[t][bucketElementCount[t]++] = arr[j];
+            }
+            int index = 0;
+            for (int j = 0; j &lt; bucketElementCount.length; j++) {
+                int n = 0;
+                while (n&lt;bucketElementCount[j]){
+                    arr[index++] = bucket[j][n];
+                    n++;
+                }
+                bucketElementCount[j] = 0;
+            }
+        }
+    }
+    /**
+     * 归并排序之 分
+     * @param arr
+     * @param left
+     * @param right
+     */
+    public static void merge(int[] arr,int left,int right){
+        if (left&gt;=right){
+            return;
+        }
+        int mid = (left+right)/2;
+        merge(arr,left,mid);
+        merge(arr,mid+1,right);
+        mergeSort(arr,left,right);
+    }
+    /**
+     * 归并排序之 合并
+     * @param arr
+     * @param left
+     * @param right
+     */
+    public static void mergeSort(int[] arr,int left,int right){
+        if (left&gt;=right){
+            return;
+        }
+        int mid = (left+right)/2;
+
+        int i = left;
+        int j = mid+1;
+        int[] temp = new int[right-left+1];
+        int index= 0;
+        while (i&lt;=mid &amp;&amp; j&lt;=right){
+            temp[index++]=arr[i]&lt;arr[j]?arr[i++]:arr[j++];
+        }
+        while (i&lt;=mid){
+            temp[index++]=arr[i++];
+        }
+        while (j&lt;=right){
+            temp[index++]=arr[j++];
+        }
+        int m  = 0;
+        for (int k = left; k &lt;= right; k++) {
+            arr[k] = temp[m++];
+        }
+        mergeSort(arr,left,mid);
+        mergeSort(arr,mid+1,right);
+    }
+
+    /**
+     * 希尔排序之移动
+     * @param arr
+     * @param group
+     */
+    public static void shellSort2(int[] arr,int group){
+        while (group&gt;0) {
+            for (int j = group; j &lt; arr.length; j++) {
+                int k = j;
+                int temp = arr[j];
+                while (k-group &gt;=0 &amp;&amp; arr[k-group]&gt;arr[k]){
+                    int t = arr[k];
+                    arr[k] = arr[k-group];
+                    arr[k-group] = t;
+                    k -= group;
+                }
+                arr[k] = temp;
+            }
+            group /= 2;
+        }
+    }
+    /**
+     * 希尔排序之交换
+     * @param arr
+     * @param group
+     */
+    public static void shellSort(int[] arr,int group){
+        if (group&lt;1){
+            return;
+        }
+        for (int i = group; i &lt; arr.length; i++) {
+            for (int j = i-group; j &gt;=0; j -= group) {
+                if (arr[j]&gt;arr[j+group]){
+                    int temp = arr[j];
+                    arr[j] = arr[j+group];
+                    arr[j+group] = temp;
+                }
+            }
+        }
+        shellSort(arr,group/2);
+    }
+
+    /**
+     * 快速排序
+     * @param arr
+     * @param left
+     * @param right
+     */
+    public static void quickSort(int[] arr,int left,int right){
+        if (left&gt;=right){
+            return;
+        }
+        int pivote = arr[left];
+        int i = left;
+        int j = right;
+        while (i&lt;j){
+            while (i&lt;j &amp;&amp; arr[j]&gt;pivote){
+                j--;
+            }
+            while (i&lt;j &amp;&amp; arr[i]&lt;=pivote){
+                i++;
+            }
+            int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+        }
+        arr[left] = arr[i];
+        arr[i] = pivote;
+        quickSort(arr,left,i-1);
+        quickSort(arr,i+1,right);
+    }
+
+    /**
+     * 插入排序
+     * @param arr
+     */
+    public static void insertSort(int[] arr){
+        for (int i = 1; i &lt; arr.length; i++) {
+            int j = i;
+            int temp = arr[i];
+            while (j&gt;0 &amp;&amp; temp&lt;arr[j-1]){
+                arr[j] = arr[j-1];
+                j--;
+            }
+            arr[j] = temp;
+        }
+    }
+    /**
+     * 选择排序
+     * @param arr
+     */
+    public static void checkSort(int[] arr){
+        for (int i = 0; i &lt; arr.length; i++) {
+            int min = arr[i];
+            int index = 0;
+            boolean flag = false;
+            for (int j = i; j &lt; arr.length; j++) {
+                if (arr[j]&lt;min){
+                    min = arr[j];
+                    index = j;
+                    flag = true;
+                }
+            }
+            if (flag){
+                int temp = arr[index];
+                arr[index] = arr[i];
+                arr[i] = temp;
+            }
+        }
+    }
+
+    /**
+     * 冒泡排序
+     * @param arr
+     */
+    public static void bubleSort(int[] arr){
+        boolean flag = true;
+        for (int i = 0; i &lt; arr.length; i++) {
+            for (int j = 0; j &lt; arr.length - i - 1; j++) {
+                if (arr[j+1]&lt;arr[j]){
+                    int temp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp;
+                    flag = false;
+                }
+            }
+            if (flag){
+                break;
+            }
+        }
+    }
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br><span class="line-number">158</span><br><span class="line-number">159</span><br><span class="line-number">160</span><br><span class="line-number">161</span><br><span class="line-number">162</span><br><span class="line-number">163</span><br><span class="line-number">164</span><br><span class="line-number">165</span><br><span class="line-number">166</span><br><span class="line-number">167</span><br><span class="line-number">168</span><br><span class="line-number">169</span><br><span class="line-number">170</span><br><span class="line-number">171</span><br><span class="line-number">172</span><br><span class="line-number">173</span><br><span class="line-number">174</span><br><span class="line-number">175</span><br><span class="line-number">176</span><br><span class="line-number">177</span><br><span class="line-number">178</span><br><span class="line-number">179</span><br><span class="line-number">180</span><br><span class="line-number">181</span><br><span class="line-number">182</span><br><span class="line-number">183</span><br><span class="line-number">184</span><br><span class="line-number">185</span><br><span class="line-number">186</span><br><span class="line-number">187</span><br><span class="line-number">188</span><br><span class="line-number">189</span><br><span class="line-number">190</span><br><span class="line-number">191</span><br><span class="line-number">192</span><br><span class="line-number">193</span><br><span class="line-number">194</span><br><span class="line-number">195</span><br><span class="line-number">196</span><br><span class="line-number">197</span><br><span class="line-number">198</span><br><span class="line-number">199</span><br><span class="line-number">200</span><br><span class="line-number">201</span><br><span class="line-number">202</span><br><span class="line-number">203</span><br><span class="line-number">204</span><br><span class="line-number">205</span><br><span class="line-number">206</span><br><span class="line-number">207</span><br><span class="line-number">208</span><br><span class="line-number">209</span><br><span class="line-number">210</span><br><span class="line-number">211</span><br><span class="line-number">212</span><br><span class="line-number">213</span><br><span class="line-number">214</span><br><span class="line-number">215</span><br><span class="line-number">216</span><br><span class="line-number">217</span><br><span class="line-number">218</span><br><span class="line-number">219</span><br><span class="line-number">220</span><br><span class="line-number">221</span><br><span class="line-number">222</span><br><span class="line-number">223</span><br><span class="line-number">224</span><br><span class="line-number">225</span><br><span class="line-number">226</span><br><span class="line-number">227</span><br><span class="line-number">228</span><br><span class="line-number">229</span><br><span class="line-number">230</span><br><span class="line-number">231</span><br><span class="line-number">232</span><br><span class="line-number">233</span><br></div></div><h2 id="查找算法"><a href="#查找算法" class="header-anchor">#</a> 查找算法</h2> <h3 id="二分查找"><a href="#二分查找" class="header-anchor">#</a> 二分查找</h3> <p><img src="C:%5CUsers%5CRXT-2020%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1583300559827.png" alt="1583300559827"></p> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token comment">//查找单个数字，</span>
+<span class="token comment">//递归查找</span>
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">int</span> <span class="token function">binarySearch</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> arr<span class="token punctuation">,</span><span class="token keyword">int</span> condition<span class="token punctuation">,</span><span class="token keyword">int</span> left<span class="token punctuation">,</span><span class="token keyword">int</span> right<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>left<span class="token operator">&gt;</span>right<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">int</span> mid <span class="token operator">=</span> <span class="token punctuation">(</span>left<span class="token operator">+</span>right<span class="token punctuation">)</span><span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>arr<span class="token punctuation">[</span>mid<span class="token punctuation">]</span><span class="token operator">==</span>condition<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">return</span> mid<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>arr<span class="token punctuation">[</span>mid<span class="token punctuation">]</span><span class="token operator">&lt;</span>condition<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token function">binarySearch</span><span class="token punctuation">(</span>arr<span class="token punctuation">,</span>condition<span class="token punctuation">,</span>mid<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span>right<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token function">binarySearch</span><span class="token punctuation">(</span>arr<span class="token punctuation">,</span>condition<span class="token punctuation">,</span>left<span class="token punctuation">,</span>mid<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token comment">//查找一个数字，可能有多个在arr里的情况</span>
+<span class="token comment">//在查找一个数字 的 递归返回的成果条件里，mid = condition 时，遍历mid 左右的数字即可</span>
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token class-name">ArrayList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Integer</span><span class="token punctuation">&gt;</span></span> <span class="token function">binarySearch2</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> arr<span class="token punctuation">,</span> <span class="token keyword">int</span> condition<span class="token punctuation">,</span>
+<span class="token keyword">int</span> left<span class="token punctuation">,</span> <span class="token keyword">int</span> right<span class="token punctuation">)</span>
+ <span class="token punctuation">{</span>       
+ 		<span class="token keyword">if</span> <span class="token punctuation">(</span>left<span class="token operator">&gt;</span>right<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">int</span> mid <span class="token operator">=</span> <span class="token punctuation">(</span>left<span class="token operator">+</span>right<span class="token punctuation">)</span><span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>arr<span class="token punctuation">[</span>mid<span class="token punctuation">]</span><span class="token operator">==</span>condition<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>mid<span class="token operator">+</span><span class="token string">&quot;---------&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token class-name">ArrayList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Integer</span><span class="token punctuation">&gt;</span></span> list <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">int</span> temp <span class="token operator">=</span> mid<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+            <span class="token keyword">while</span> <span class="token punctuation">(</span>temp<span class="token operator">&gt;=</span><span class="token number">0</span> <span class="token operator">&amp;&amp;</span> arr<span class="token punctuation">[</span>temp<span class="token punctuation">]</span><span class="token operator">==</span>condition<span class="token punctuation">)</span><span class="token punctuation">{</span>
+                list<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>temp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                temp<span class="token operator">--</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            list<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>mid<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            temp <span class="token operator">=</span> mid<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">;</span>
+            <span class="token keyword">while</span> <span class="token punctuation">(</span>temp<span class="token operator">&lt;=</span>arr<span class="token punctuation">.</span>length<span class="token operator">-</span><span class="token number">1</span> <span class="token operator">&amp;&amp;</span> arr<span class="token punctuation">[</span>temp<span class="token punctuation">]</span><span class="token operator">==</span>condition<span class="token punctuation">)</span><span class="token punctuation">{</span>
+                list<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>temp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                temp<span class="token operator">++</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">return</span> list<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>arr<span class="token punctuation">[</span>mid<span class="token punctuation">]</span><span class="token operator">&lt;</span>condition<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token function">binarySearch2</span><span class="token punctuation">(</span>arr<span class="token punctuation">,</span>condition<span class="token punctuation">,</span>mid<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span>right<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token function">binarySearch2</span><span class="token punctuation">(</span>arr<span class="token punctuation">,</span>condition<span class="token punctuation">,</span>left<span class="token punctuation">,</span>mid<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br></div></div><h3 id="插值查找"><a href="#插值查找" class="header-anchor">#</a> 插值查找</h3> <p><img src="C:%5CUsers%5CRXT-2020%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1583651879784.png" alt="1583651879784"></p> <ul><li>mid = left + (condition-arr[left])/(arr[right]-arr[left])*(right-left)</li> <li>原理 查找 该条件数字在索引下标的相对位置，如果不是则递归</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>package com.rxt.algorithm.search;
+
+/**
+ * @author Ruan.X.T.
+ * @create 2020-03-08-14:45
+ */
+public class InsertValueSearch {
+    public static void main(String[] args) {
+        int[] arr = {1,15,30,40,45,50,55,60,65,70,75};
+        int i = insertValueSearch(arr, 0, arr.length - 1, 55);
+        System.out.println(i);
+    }
+    public static int insertValueSearch(int[] arr,int left,int right,int condition){
+        if (left&gt;right || condition&lt;arr[left] || condition&gt;arr[right] ){
+            return -1;
+        }
+        int mid = left + (condition-arr[left])/(arr[right]-arr[left])*(right-left);
+        if (arr[mid]==condition){
+            return mid;
+        }else if (arr[mid]&lt;condition){
+            return insertValueSearch(arr,mid+1,right,condition);
+        }else {
+            return insertValueSearch(arr,left,mid-1,condition);
+        }
+    }
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br></div></div><p><strong>注意事项</strong>：</p> <ul><li>对于数据量大，关键字分布比较均匀的查找表来说，采用插值查找速度快。</li> <li>对于关键字分布不均匀，该方法不一定比二分查找快</li></ul> <h3 id="斐波那契查找"><a href="#斐波那契查找" class="header-anchor">#</a> 斐波那契查找</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>package com.rxt.algorithm.search;
+
+import java.util.Arrays;
+
+/**
+ * @author Ruan.X.T.
+ * @create 2020-03-08-18:34
+ */
+public class FibonacciSearch {
+    static int fiboSize = 20;
+    public static void main(String[] args) {
+        int[] arr = {5,7};
+        int i = fibonaciiSearch(arr, 7);
+        System.out.println(i);
+    }
+    public static int fibonaciiSearch(int[] arr,int condition){
+        int low = 0;
+        int high = arr.length-1;
+        int[] fib = fibonacii();
+        int k = 0;
+        while (fib[k]-1&lt;high){
+            k++;
+        }
+        int[] temp = Arrays.copyOf(arr,fib[k]);
+        for (int i = high+1; i &lt; temp.length; i++) {
+            temp[i] = arr[high];
+        }
+        while (low&lt;=high){
+            int mid =low+fib[k-1]-1;
+            if (temp[mid]==condition){
+                if (mid&lt;high){
+                    return mid;
+                }else {
+                    return high;
+                }
+            }else if (temp[mid]&lt;condition){
+                low = mid + 1;
+                k--;
+            }else {
+                high = mid - 1;
+                k -= 2;
+            }
+        }
+        return -1;
+    }
+    public static int[] fibonacii(){
+        int[] arr = new int[fiboSize];
+        arr[0] = 1;
+        arr[1] = 1;
+        for (int i = 2; i &lt; fiboSize ; i++) {
+            arr[i] = arr[i-1] + arr[i-2];
+        }
+        return arr;
+    }
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br></div></div><p><strong>步骤</strong>:</p> <ul><li><p>1.先创建斐波那契数列</p></li> <li><p>2.如果斐波那契数列fib[k]-1  &lt;  high</p> <p>则k++</p></li> <li><p>3.借助斐波那契数列查询mid点</p></li> <li><p>4.因为 f(k) = f(k-1) + f(k-2)</p> <p>所以f(k)-1 = f(k-1)-1 + f(k-2)-1 + 1</p> <p>所以黄金分割点mid = low + f(k-1)-1</p></li> <li><p>由此判断是否mid = condition 如果不是就循环</p></li></ul></div> <footer class="page-edit" style="display:none;"><!----> <!----></footer> <!----> <!----></main> <!----> <div class="comments-wrapper" data-v-4698c43e><!----></div></div></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-a81d141e data-v-a81d141e><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-a81d141e><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-a81d141e></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-a81d141e></path></svg></div></div></div>
+    <script src="/assets/js/app.20e080e3.js" defer></script><script src="/assets/js/3.69b4042a.js" defer></script><script src="/assets/js/1.c4c6ad86.js" defer></script><script src="/assets/js/13.606381d5.js" defer></script>
+  </body>
+</html>
